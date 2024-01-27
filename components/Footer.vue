@@ -9,7 +9,7 @@ const languages = Object.keys(messages.value);
   >
     <UPopover class="ml-auto" :popper="{ placement: 'top-end' }">
       <UButton
-        color="teal"
+        color="sky"
         size="sm"
         square
         variant="outline"
@@ -20,9 +20,9 @@ const languages = Object.keys(messages.value);
         <div class="p-6">
           <template v-for="lang in languages" :key="lang">
             <p
-              class="cursor-pointer hover:text-teal-500 py-1"
+              class="cursor-pointer hover:text-sky-500 py-1"
               :class="
-                locale === lang ? ' text-teal-500 font-bold' : ' text-gray-500'
+                locale === lang ? ' text-sky-500 font-bold' : ' text-gray-500'
               "
               @click="
                 () => {
