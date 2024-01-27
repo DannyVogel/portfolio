@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>{{ $t("technologies") }}</h1>
+    <h1>{{ $t("techAndTools") }}</h1>
     <div class="mt-2 flex gap-2 flex-wrap">
       <UButton
         label="TypeScript"
@@ -75,6 +75,38 @@
         square
         variant="soft"
         icon="i-logos-css-3"
+      />
+      <UButton
+        label="Git"
+        color="sky"
+        size="sm"
+        square
+        variant="soft"
+        icon="i-logos-git-icon"
+      />
+      <UButton
+        label="Agile and Scrum"
+        color="sky"
+        size="sm"
+        square
+        variant="soft"
+        icon="i-heroicons-user-group"
+      />
+      <UButton
+        label="Jira"
+        color="sky"
+        size="sm"
+        square
+        variant="soft"
+        icon="i-ph-list-checks"
+      />
+      <UButton
+        label="Kanban"
+        color="sky"
+        size="sm"
+        square
+        variant="soft"
+        icon="i-ph-kanban-duotone"
       />
     </div>
   </div>
