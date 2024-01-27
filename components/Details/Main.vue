@@ -10,7 +10,13 @@
       <p class="hidden sm:block text-sm">{{ $t("description") }}</p>
       <DetailsSocials />
     </div>
-    <img src="/img/me.png" alt="Danny Vogel" width="150" />
+    <img
+      src="/img/me.png"
+      alt="Danny Vogel"
+      width="150"
+      class="hidden sm:block"
+    />
+    <img src="/img/me.png" alt="Danny Vogel" width="120" class="sm:hidden" />
   </div>
   <p class="sm:hidden text-sm">{{ $t("description") }}</p>
 </template>
