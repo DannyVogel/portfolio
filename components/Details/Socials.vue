@@ -21,12 +21,17 @@ const socials = [
 ];
 
 const toast = useToast();
+const { t } = useI18n();
 const copyToClipBoard = (text: string) => {
   navigator.clipboard.writeText(text);
   toast.add({
-    title: "Copied to clipboard",
+    title: `${t("copied")}`,
     icon: "i-heroicons-check-circle",
   });
+};
+
+const openLink = (link: string) => {
+  window.open(link, "_blank");
 };
 </script>
 
@@ -41,7 +46,11 @@ const copyToClipBoard = (text: string) => {
           variant="outline"
           :icon="social.icon"
           :href="social.link"
-          @click="social.canCopy && copyToClipBoard(social.link)"
+          @click="
+            social.canCopy
+              ? copyToClipBoard(social.link)
+              : openLink(social.link)
+          "
         />
       </UTooltip>
     </template>

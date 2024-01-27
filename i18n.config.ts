@@ -20,6 +20,7 @@ export default defineI18nConfig(() => ({
         linkedin: "Go to my LinkedIn profile",
         github: "Go to my GitHub profile",
       },
+      copied: "Copied to clipboard!",
       techAndTools: "Technologies and Tools",
     },
     ES: {
@@ -40,6 +41,7 @@ export default defineI18nConfig(() => ({
         linkedin: "Ir a mi perfil de LinkedIn",
         github: "Ir a mi perfil de GitHub",
       },
+      copied: "¡Copiado al portapapeles!",
       techAndTools: "Tecnologías y Herramientas",
     },
   },
