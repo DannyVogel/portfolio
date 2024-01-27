@@ -2,4 +2,5 @@
   <NuxtLayout>
     <Main />
   </NuxtLayout>
+  <UNotifications />
 </template>
