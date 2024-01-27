@@ -35,7 +35,7 @@ const copyToClipBoard = (text: string) => {
     <template v-for="social in socials" :key="social">
       <UTooltip :text="$t(social.tooltipText)">
         <UButton
-          color="teal"
+          color="sky"
           size="sm"
           square
           variant="outline"
