@@ -17,6 +17,7 @@ export default defineI18nConfig(() => ({
         linkedin: "Go to my LinkedIn profile",
         github: "Go to my GitHub profile",
       },
+      technologies: "Technologies",
     },
     ES: {
       welcome: "Bienvenido",
@@ -33,6 +34,7 @@ export default defineI18nConfig(() => ({
         linkedin: "Ir a mi perfil de LinkedIn",
         github: "Ir a mi perfil de GitHub",
       },
+      technologies: "Tecnologías",
     },
   },
 }));
