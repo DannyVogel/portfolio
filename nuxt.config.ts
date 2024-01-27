@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@formkit/auto-animate",
     "@nuxtjs/google-fonts",
+    "@nuxt/devtools"
   ],
-  css: ["@/assets/css/main.css"],
   tailwindcss: {
     viewer: false,
   },
