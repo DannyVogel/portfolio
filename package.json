@@ -23,6 +23,7 @@
     "vite": "^5.0.12"
   },
   "dependencies": {
+    "@iconify-json/logos": "^1.1.42",
     "@iconify-json/ph": "^1.1.10"
   }
 }

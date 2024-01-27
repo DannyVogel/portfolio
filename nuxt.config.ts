@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@formkit/auto-animate",
     "@nuxtjs/google-fonts",
-    "@nuxt/devtools"
   ],
   tailwindcss: {
     viewer: false,
@@ -22,6 +21,6 @@ export default defineNuxtConfig({
     },
   },
   ui: {
-    icons: ["heroicons", "ph"],
+    icons: ["heroicons", "ph", "logos"],
   },
 });
