@@ -17,7 +17,7 @@ const languages = Object.keys(messages.value);
       />
 
       <template #panel="{ close }">
-        <div class="p-6">
+        <div class="p-5 grid grid-cols-2 gap-x-2">
           <template v-for="lang in languages" :key="lang">
             <p
               class="cursor-pointer hover:text-sky-500 py-1"
@@ -32,7 +32,6 @@ const languages = Object.keys(messages.value);
               "
             >
               {{ $t(`languages.${lang}`) }}
-              >
             </p>
           </template>
         </div>
