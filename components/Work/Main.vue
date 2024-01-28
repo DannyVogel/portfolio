@@ -29,7 +29,7 @@ const jobs = [
             <div class="flex flex-col sm:flex-row sm:gap-2">
               <h2 class="">{{ $t(job.title) }}</h2>
               <p class="hidden sm:block">•</p>
-              <h2 class="">{{ $t(job.date) }}</h2>
+              <h2 class="text-gray-400">{{ $t(job.date) }}</h2>
             </div>
             <p class="text-sm text-gray-400">{{ $t(job.description) }}</p>
           </div>
