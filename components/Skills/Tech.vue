@@ -7,7 +7,7 @@
       <UButton
         label="TypeScript"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-typescript-icon"
@@ -15,7 +15,7 @@
       <UButton
         label="VueJS"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-vue"
@@ -23,7 +23,7 @@
       <UButton
         label="Nuxt"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-nuxt-icon"
@@ -31,7 +31,7 @@
       <UButton
         label="React"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-react"
@@ -39,7 +39,7 @@
       <UButton
         label="Tailwind"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-tailwindcss-icon"
@@ -47,7 +47,7 @@
       <UButton
         label="Firebase"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-firebase"
@@ -55,7 +55,7 @@
       <UButton
         label="ViteJS"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-vitejs"
@@ -63,7 +63,7 @@
       <UButton
         label="HTML5"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-html-5"
@@ -71,7 +71,7 @@
       <UButton
         label="CSS"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-css-3"
@@ -79,15 +79,15 @@
       <UButton
         label="Git"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-logos-git-icon"
       />
       <UButton
-        label="Agile and Scrum"
+        label="Agile/Scrum"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-heroicons-user-group"
@@ -95,7 +95,7 @@
       <UButton
         label="Jira"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-ph-list-checks"
@@ -103,7 +103,7 @@
       <UButton
         label="Kanban"
         color="sky"
-        size="sm"
+        size="xs"
         square
         variant="soft"
         icon="i-ph-kanban-duotone"
