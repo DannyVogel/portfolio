@@ -4,5 +4,6 @@
   <div class="mt-4 flex flex-col gap-4">
     <DetailsMain />
     <SkillsMain />
+    <WorkMain />
   </div>
 </template>
