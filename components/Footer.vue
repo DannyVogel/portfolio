@@ -14,6 +14,7 @@ const languages = Object.keys(messages.value);
         square
         variant="outline"
         icon="i-heroicons-globe-alt"
+        class="bg-slate-900"
       />
 
       <template #panel="{ close }">
