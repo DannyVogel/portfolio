@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>{{ $t("techAndTools") }}</h1>
+    <h1 class="text-xl">{{ $t("techAndTools") }}</h1>
     <div class="mt-2 flex gap-2 flex-wrap">
       <UButton
         label="TypeScript"
@@ -11,6 +11,7 @@
         square
         variant="soft"
         icon="i-logos-typescript-icon"
+        class="cursor-default"
       />
       <UButton
         label="VueJS"
@@ -19,6 +20,7 @@
         square
         variant="soft"
         icon="i-logos-vue"
+        class="cursor-default"
       />
       <UButton
         label="Nuxt"
@@ -27,6 +29,7 @@
         square
         variant="soft"
         icon="i-logos-nuxt-icon"
+        class="cursor-default"
       />
       <UButton
         label="React"
@@ -35,6 +38,16 @@
         square
         variant="soft"
         icon="i-logos-react"
+        class="cursor-default"
+      />
+      <UButton
+        label="Pinia"
+        color="sky"
+        size="xs"
+        square
+        variant="soft"
+        icon="i-logos-pinia"
+        class="cursor-default"
       />
       <UButton
         label="Tailwind"
@@ -43,6 +56,7 @@
         square
         variant="soft"
         icon="i-logos-tailwindcss-icon"
+        class="cursor-default"
       />
       <UButton
         label="Firebase"
@@ -51,6 +65,7 @@
         square
         variant="soft"
         icon="i-logos-firebase"
+        class="cursor-default"
       />
       <UButton
         label="ViteJS"
@@ -59,6 +74,7 @@
         square
         variant="soft"
         icon="i-logos-vitejs"
+        class="cursor-default"
       />
       <UButton
         label="HTML5"
@@ -67,14 +83,16 @@
         square
         variant="soft"
         icon="i-logos-html-5"
+        class="cursor-default"
       />
       <UButton
-        label="CSS"
+        label="CSS3"
         color="sky"
         size="xs"
         square
         variant="soft"
         icon="i-logos-css-3"
+        class="cursor-default"
       />
       <UButton
         label="Git"
@@ -83,6 +101,7 @@
         square
         variant="soft"
         icon="i-logos-git-icon"
+        class="cursor-default"
       />
       <UButton
         label="Agile/Scrum"
@@ -91,6 +110,7 @@
         square
         variant="soft"
         icon="i-heroicons-user-group"
+        class="cursor-default"
       />
       <UButton
         label="Jira"
@@ -99,6 +119,7 @@
         square
         variant="soft"
         icon="i-ph-list-checks"
+        class="cursor-default"
       />
       <UButton
         label="Kanban"
@@ -107,6 +128,7 @@
         square
         variant="soft"
         icon="i-ph-kanban-duotone"
+        class="cursor-default"
       />
     </div>
   </div>

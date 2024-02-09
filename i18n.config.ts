@@ -27,7 +27,7 @@ export default defineI18nConfig(() => ({
         GFAL: {
           title: "Frontend Developer",
           company: "GFAL",
-          date: "September 2021 - Present",
+          date: "May 2023 - Present",
           description:
             "Spearheading the frontend development of the company's cutting-edge marketplace website, gfal.market, serving as a hub for a user's account and providing the ability to purchase in-game items using its crypto token. Integrating multiple services, including the ID platform, backend server, and a cryptocurrency exchange rate service, to deliver a user-friendly, responsive, and performant website experience.",
         },
@@ -37,6 +37,13 @@ export default defineI18nConfig(() => ({
           date: "March 2023 - May 2023",
           description:
             "Collaborated remotely with an international team to develop responsiveweb applications using agile and scrum methodologies. ",
+        },
+      },
+      projects: "Projects",
+      projectsList: {
+        SignWise: {
+          description:
+            "SignWise redefines user interactions with blockchain technology by providing innovative solutions to prevalent challenges. A Web2 experience with Web3 security & ownership. We make it simple: Own your assets & be your own bank, Fee- and gas-less transactions, Social Login. (No seedphrases), Frictionless experience.",
         },
       },
     },
@@ -65,7 +72,7 @@ export default defineI18nConfig(() => ({
         GFAL: {
           title: "Desarrollador Frontend",
           company: "GFAL",
-          date: "Septiembre 2021 - Presente",
+          date: "Mayo 2023 - Presente",
           description:
             "Dirigiendo el desarrollo frontend del sitio web de vanguardia de la empresa, gfal.market, que sirve como centro de la cuenta de un usuario y proporciona la capacidad de comprar artículos de juegos usando su criptomoneda. Integrando múltiples servicios, incluida la plataforma ID, el servidor backend y un servicio de tipo de cambio de criptomonedas, para ofrecer una experiencia de sitio web fácil de usar, responsive y de alto rendimiento.",
         },
@@ -75,6 +82,13 @@ export default defineI18nConfig(() => ({
           date: "Marzo 2023 - Mayo 2023",
           description:
             "Colaboró de forma remota con un equipo internacional para desarrollar aplicaciones web responsivas utilizando metodologías ágiles y scrum.",
+        },
+      },
+      projects: "Proyectos",
+      projectsList: {
+        SignWise: {
+          description:
+            "SignWise redefine las interacciones del usuario con la tecnología blockchain proporcionando soluciones innovadoras a desafíos prevalentes. Una experiencia Web2 con seguridad y propiedad Web3. Lo hacemos simple: Posea sus activos y sea su propio banco, transacciones sin comisiones ni gas, inicio de sesión social. (Sin frases semilla), experiencia sin fricciones.",
         },
       },
     },
@@ -103,7 +117,7 @@ export default defineI18nConfig(() => ({
         GFAL: {
           title: "Frontend-Entwickler",
           company: "GFAL",
-          date: "September 2021 - Heute",
+          date: "Mai 2023 - Heute",
           description:
             "Leitet die Frontend-Entwicklung der modernen Marktplatz-Website des Unternehmens, gfal.market, die als Hub für das Konto eines Benutzers dient und die Möglichkeit bietet, In-Game-Artikel mit seiner Kryptowährung zu kaufen. Integration mehrerer Dienste, einschließlich der ID-Plattform, des Backend-Servers und eines Kryptowährungswechselkurses, um eine benutzerfreundliche, responsive und leistungsstarke Website-Erfahrung zu bieten.",
         },
@@ -113,6 +127,13 @@ export default defineI18nConfig(() => ({
           date: "März 2023 - Mai 2023",
           description:
             "Zusammenarbeit mit einem internationalen Team, um responsive Webanwendungen unter Verwendung agiler und Scrum-Methoden zu entwickeln.",
+        },
+      },
+      projects: "Projekte",
+      projectsList: {
+        SignWise: {
+          description:
+            "SignWise definiert die Benutzerinteraktionen mit Blockchain-Technologie neu, indem innovative Lösungen für verbreitete Herausforderungen bereitgestellt werden. Eine Web2-Erfahrung mit Web3-Sicherheit und -Eigentum. Wir machen es einfach: Besitzen Sie Ihre Vermögenswerte und seien Sie Ihre eigene Bank, gebühren und gasfreie Transaktionen, Social Login. (Keine Seedphrasen), Reibungsloses Erlebnis.",
         },
       },
     },
@@ -141,7 +162,7 @@ export default defineI18nConfig(() => ({
         GFAL: {
           title: "Développeur Frontend",
           company: "GFAL",
-          date: "Septembre 2021 - Aujourd'hui",
+          date: "Mai 2023 - Aujourd'hui",
           description:
             "Diriger le développement frontend du site Web de pointe de l'entreprise, gfal.market, servant de hub pour le compte d'un utilisateur et offrant la possibilité d'acheter des articles de jeu à l'aide de sa crypto-monnaie. Intégration de plusieurs services, dont la plate-forme ID, le serveur backend et un service de taux de change de crypto-monnaie, pour offrir une expérience de site Web conviviale, responsive et performante.",
         },
@@ -151,6 +172,13 @@ export default defineI18nConfig(() => ({
           date: "Mars 2023 - Mai 2023",
           description:
             "Collaboration à distance avec une équipe internationale pour développer des applications Web responsive en utilisant des méthodologies agiles et Scrum.",
+        },
+      },
+      projects: "Projets",
+      projectsList: {
+        SignWise: {
+          description:
+            "SignWise redéfinit les interactions des utilisateurs avec la technologie blockchain en fournissant des solutions innovantes aux défis prévalents. Une expérience Web2 avec sécurité et propriété Web3. Nous simplifions: Possédez vos actifs et soyez votre propre banque, transactions sans frais ni gaz, connexion sociale. (Pas de phrases de départ), expérience sans friction.",
         },
       },
     },
@@ -179,7 +207,7 @@ export default defineI18nConfig(() => ({
         GFAL: {
           title: "Desenvolupador Frontend",
           company: "GFAL",
-          date: "Setembre 2021 - Avui",
+          date: "Maig 2023 - Present",
           description:
             "Dirigint el desenvolupament frontend del lloc web de vanguardia de l'empresa, gfal.market, que serveix com a centre del compte d'un usuari i proporciona la capacitat de comprar articles de jocs utilitzant la seva criptomoneda. Integrant múltiples serveis, incloent la plataforma ID, el servidor backend i un servei de tipus de canvi de criptomonedes, per oferir una experiència de lloc web fàcil d'utilitzar, responsive i de gran rendiment.",
         },
@@ -189,6 +217,13 @@ export default defineI18nConfig(() => ({
           date: "Març 2023 - Maig 2023",
           description:
             "Col·laboració a distància amb un equip internacional per desenvolupar aplicacions web responsive utilitzant metodologies àgils i Scrum.",
+        },
+      },
+      projects: "Projectes",
+      projectsList: {
+        SignWise: {
+          description:
+            "SignWise redefineix les interaccions de l'usuari amb la tecnologia blockchain proporcionant solucions innovadores als reptes prevalents. Una experiència Web2 amb seguretat i propietat Web3. Ho fem senzill: Poseu els vostres actius i sigui el vostre propi banc, transaccions sense comissions ni gas, inici de sessió social. (Sense frases de partida), experiència sense fricció.",
         },
       },
     },
