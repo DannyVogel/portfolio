@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { chatModel } from "~/utils";
+// import { chatModel } from "~/utils";
 
-const askGpt = async () => {
-  try {
-    const res = await chatModel.invoke("List all red berries");
-    console.log(res);
-  } catch (error) {
-    console.log(error);
-  }
-};
+// const askGpt = async () => {
+//   try {
+//     const res = await chatModel.invoke("List all red berries");
+//     console.log(res);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 </script>
 
 <template>
