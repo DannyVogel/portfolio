@@ -26,7 +26,7 @@ const jobs = [
 <template>
   <div>
     <h1 class="text-xl font-bold">{{ $t("workExperience") }}</h1>
-    <div class="mt-2 flex flex-col gap-4">
+    <div class="mt-4 flex flex-col gap-6">
       <template v-for="job in jobs" :key="job.company">
         <div class="flex items-start gap-2">
           <img :src="job.logo" alt="logo" class="w-8 h-8 rounded-full" />
