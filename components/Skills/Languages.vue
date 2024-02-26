@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <h1 class="text-xl">{{ $t("languages.title") }}</h1>
-    <div class="mt-2 flex gap-2 flex-wrap">
+    <h1 class="text-xl font-bold">{{ $t("languages.title") }}</h1>
+    <div class="mt-2 flex gap-2 flex-wrap print:hidden">
       <UButton
         :label="$t('languages.EN')"
         color="sky"
@@ -50,6 +50,13 @@
         <img src="/img/es-ct.svg" alt="UK" class="w-4 h-4" />
         <p>{{ $t("languages.CA") }}</p>
       </UButton>
+    </div>
+    <div class="mt-2 hidden print:flex gap-2 flex-wrap">
+      <p>English</p>
+      <p>Spanish</p>
+      <p>German</p>
+      <p>French</p>
+      <p>Catalan</p>
     </div>
   </div>
 </template>

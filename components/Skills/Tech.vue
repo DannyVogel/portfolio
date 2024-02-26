@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <h1 class="text-xl">{{ $t("techAndTools") }}</h1>
-    <div class="mt-2 flex gap-2 flex-wrap">
+    <h1 class="text-xl font-bold">{{ $t("techAndTools") }}</h1>
+    <div class="mt-2 flex gap-2 flex-wrap print:hidden">
       <UButton
         label="TypeScript"
         color="sky"
@@ -130,6 +130,22 @@
         icon="i-ph-kanban-duotone"
         class="cursor-default"
       />
+    </div>
+    <div class="mt-2 hidden print:flex gap-2 flex-wrap">
+      <p>TypeScript</p>
+      <p>VueJS</p>
+      <p>Nuxt</p>
+      <p>React</p>
+      <p>Pinia</p>
+      <p>Tailwind</p>
+      <p>Firebase</p>
+      <p>ViteJS</p>
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>Git</p>
+      <p>Agile/Scrum</p>
+      <p>Jira</p>
+      <p>Kanban</p>
     </div>
   </div>
 </template>
