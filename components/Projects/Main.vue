@@ -12,16 +12,66 @@ const projects = [
       Blockchain: "i-eos-icons-blockchain",
     },
   },
+  {
+    title: "SoundScribe",
+    link: "https://dv-soundscribe.netlify.app/",
+    description: "projectsList.SoundScribe.description",
+    logo: "/img/soundScribe.png",
+    techStack: {
+      Vue: "i-logos-vue",
+      TailwindCSS: "i-logos-tailwindcss-icon",
+      TypeScript: "i-logos-typescript-icon",
+    },
+  },
+  {
+    title: "gameState",
+    link: "https://dv-gamestate.netlify.app/",
+    description: "projectsList.gameState.description",
+    logo: "/img/gameState.png",
+    techStack: {
+      React: "i-logos-react",
+      TypeScript: "i-logos-typescript-icon",
+      Firebase: "i-logos-firebase",
+    },
+  },
+  {
+    title: "ToDo",
+    link: "https://todo-2f3e3.web.app/",
+    description: "projectsList.toDo.description",
+    logo: "/img/toDo.png",
+    techStack: {
+      React: "i-logos-react",
+      TypeScript: "i-logos-typescript-icon",
+      Firebase: "i-logos-firebase",
+    },
+  },
+  {
+    title: "Rock Paper Scissors",
+    link: "https://rock-paper-scissors-2f3e3.web.app/",
+    description: "projectsList.rockPaperScissors.description",
+    logo: "/img/rockPaperScissors.png",
+    techStack: {
+      TypeScript: "i-logos-typescript-icon",
+      HTML: "i-logos-html-5",
+      CSS: "i-logos-css-3",
+    },
+  },
 ];
 </script>
 
 <template>
   <div>
     <h1 class="text-xl font-bold">{{ $t("projects") }}</h1>
-    <div class="mt-2 flex flex-col gap-4">
+    <div class="mt-4 flex flex-col gap-6">
       <template v-for="project in projects" :key="project.title">
         <div class="flex items-start gap-2">
-          <img :src="project.logo" alt="logo" class="w-8 h-8 rounded-full" />
+          <a
+            :href="project.link"
+            target="_blank"
+            class="hover:scale-110 transform transition-transform duration-300 w-8 h-8 rounded-full flex-shrink-0 flex items-start justify-center"
+          >
+            <img :src="project.logo" alt="logo" class=""
+          /></a>
           <div class="flex flex-col justify-start gap-1">
             <h1 class="-mt-1 leading-none">
               <a
