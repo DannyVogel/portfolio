@@ -6,7 +6,7 @@ export default defineI18nConfig(() => ({
       welcome: "Welcome",
       title: "Frontend Developer",
       description:
-        "Driven and hardworking professional seeking to leverage software engineering skills, in combination with general problem-solving skills, languages, and a passion for computers and technology, as a frontend developer.",
+        "Frontend developer with experience designing, developing, and maintaining user-friendly and responsive web apps. Utilize language capabilities to collaborate cross-functionally with multiple teams and stakeholders to deliver projects on-time and on-budget.",
       languages: {
         title: "Languages",
         EN: "English",
@@ -71,7 +71,7 @@ export default defineI18nConfig(() => ({
       welcome: "Bienvenido",
       title: "Desarrollador Frontend",
       description:
-        "Profesional motivado y trabajador que busca aprovechar sus habilidades de ingeniera informática, en combinación con habilidades de resolución de problemas, idiomas y pasión por la informática y la tecnología, como desarrollador frontend.",
+        "Desarrollador frontend con experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web fáciles de usar y responsive. Utilizo mis habilidades lingüísticas para colaborar de manera transversal con múltiples equipos y partes interesadas para entregar proyectos a tiempo y dentro del presupuesto.",
       languages: {
         title: "Idiomas",
         EN: "Inglés",
@@ -136,7 +136,7 @@ export default defineI18nConfig(() => ({
       welcome: "Willkommen",
       title: "Frontend-Entwickler",
       description:
-        "Motivierter und fleißiger Profi, der versucht, seine Software-Engineering-Fähigkeiten in Kombination mit allgemeinen Problemlösungsfähigkeiten, Sprachen und einer Leidenschaft für Computer und Technologie als Frontend-Entwickler zu nutzen.",
+        "Frontend-Entwickler mit Erfahrung im Design, der Entwicklung und Wartung benutzerfreundlicher und responsiver Webanwendungen. Nutze Sprachkenntnisse, um in Zusammenarbeit mit mehreren Teams und Interessengruppen Projekte pünktlich und im Budget zu liefern.",
       languages: {
         title: "Sprachen",
         EN: "Englisch",
@@ -201,7 +201,7 @@ export default defineI18nConfig(() => ({
       welcome: "Bienvenue",
       title: "Développeur Frontend",
       description:
-        "Professionnel motivé et travailleur cherchant à tirer parti de ses compétences en génie logiciel, en combinaison avec des compétences générales en résolution de problèmes, des langues et une passion pour l'informatique et la technologie, en tant que développeur frontend.",
+        "Développeur frontend avec une expérience dans la conception, le développement et la maintenance d'applications Web conviviales et responsive. Utilisez des compétences linguistiques pour collaborer de manière transversale avec plusieurs équipes et parties prenantes pour livrer des projets dans les délais et le budget.",
       languages: {
         title: "Langues",
         EN: "Anglais",
@@ -266,7 +266,7 @@ export default defineI18nConfig(() => ({
       welcome: "Benvingut",
       title: "Desenvolupador Frontend",
       description:
-        "Professional motivat i treballador que busca aprofitar les seves habilitats d'enginyeria de programari, en combinació amb habilitats generals de resolució de problemes, idiomes i passió per la informàtica i la tecnologia, com a desenvolupador frontend.",
+        "Desenvolupador frontend amb experiència en el disseny, desenvolupament i manteniment d'aplicacions web fàcils d'utilitzar i responsive. Utilitzeu les capacitats lingüístiques per col·laborar de manera transversal amb diversos equips i parts interessades per lliurar projectes a temps i dins del pressupost.",
       languages: {
         title: "Idiomes",
         EN: "Anglès",
