@@ -1,3 +1,5 @@
+import { getIconCollections } from "@egoist/tailwindcss-icons";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -21,6 +23,17 @@ export default defineNuxtConfig({
     },
   },
   ui: {
-    icons: ["heroicons", "ph", "logos", "noto-v1", "eos-icons"],
+    icons: {
+      extraProperties: { "mask-size": "contain", "mask-position": "center" },
+      collections: {
+        ...getIconCollections([
+          "heroicons",
+          "ph",
+          "logos",
+          "noto-v1",
+          "eos-icons",
+        ]),
+      },
+    },
   },
 });
