@@ -12,7 +12,7 @@
 
 const getPosts = async () => {
   try {
-    const res = await $fetch("http://dv-restapi.netlify.app/api/greet", {
+    const res = await $fetch("https://dv-restapi.netlify.app/api/greet", {
       headers: {
         Authorization: "Dan",
       },
