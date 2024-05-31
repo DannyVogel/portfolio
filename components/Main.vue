@@ -9,6 +9,19 @@
 //     console.log(error);
 //   }
 // };
+
+const getPosts = async () => {
+  try {
+    const res = await $fetch("https://dv-restapi.netlify.app/api/greet", {
+      headers: {
+        Authorization: "Dan",
+      },
+    });
+    console.log("data", res);
+  } catch (error) {
+    // console.log(error);
+  }
+};
 </script>
 
 <template>
@@ -17,6 +30,6 @@
     <SkillsMain />
     <WorkMain />
     <ProjectsMain />
-    <!-- <UButton @click="askGpt">Ask GPT-3</UButton> -->
+    <UButton size="xl" @click="getPosts">Get</UButton>
   </div>
 </template>
