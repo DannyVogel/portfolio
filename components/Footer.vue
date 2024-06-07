@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-const { locale, messages } = useI18n();
-const languages = Object.keys(messages.value);
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -19,7 +18,7 @@ const languages = Object.keys(messages.value);
 
       <template #panel="{ close }">
         <div class="p-5 grid grid-cols-2 gap-x-2">
-          <template v-for="lang in languages" :key="lang">
+          <template v-for="lang in $i18n.availableLocales" :key="lang">
             <p
               class="cursor-pointer hover:text-sky-500 py-1"
               :class="
