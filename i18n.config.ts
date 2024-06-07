@@ -10,6 +10,14 @@ export default defineI18nConfig(() => ({
       languages: {
         title: "Languages",
         EN: "English",
+        ES: "Español",
+        DE: "Deutsch",
+        FR: "Français",
+        CA: "Català",
+      },
+      languageSkills: {
+        title: "Languages",
+        EN: "English",
         ES: "Spanish",
         DE: "German",
         FR: "French",
@@ -73,6 +81,14 @@ export default defineI18nConfig(() => ({
       description:
         "Desarrollador frontend con experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web fáciles de usar y responsive. Utilizo mis habilidades lingüísticas para colaborar de manera transversal con múltiples equipos y partes interesadas para entregar proyectos a tiempo y dentro del presupuesto.",
       languages: {
+        title: "Languages",
+        EN: "English",
+        ES: "Español",
+        DE: "Deutsch",
+        FR: "Français",
+        CA: "Català",
+      },
+      languageSkills: {
         title: "Idiomas",
         EN: "Inglés",
         ES: "Español",
@@ -138,6 +154,14 @@ export default defineI18nConfig(() => ({
       description:
         "Frontend-Entwickler mit Erfahrung im Design, der Entwicklung und Wartung benutzerfreundlicher und responsiver Webanwendungen. Nutze Sprachkenntnisse, um in Zusammenarbeit mit mehreren Teams und Interessengruppen Projekte pünktlich und im Budget zu liefern.",
       languages: {
+        title: "Languages",
+        EN: "English",
+        ES: "Español",
+        DE: "Deutsch",
+        FR: "Français",
+        CA: "Català",
+      },
+      languageSkills: {
         title: "Sprachen",
         EN: "Englisch",
         ES: "Spanisch",
@@ -203,6 +227,14 @@ export default defineI18nConfig(() => ({
       description:
         "Développeur frontend avec une expérience dans la conception, le développement et la maintenance d'applications Web conviviales et responsive. Utilisez des compétences linguistiques pour collaborer de manière transversale avec plusieurs équipes et parties prenantes pour livrer des projets dans les délais et le budget.",
       languages: {
+        title: "Languages",
+        EN: "English",
+        ES: "Español",
+        DE: "Deutsch",
+        FR: "Français",
+        CA: "Català",
+      },
+      languageSkills: {
         title: "Langues",
         EN: "Anglais",
         ES: "Espagnol",
@@ -268,6 +300,14 @@ export default defineI18nConfig(() => ({
       description:
         "Desenvolupador frontend amb experiència en el disseny, desenvolupament i manteniment d'aplicacions web fàcils d'utilitzar i responsive. Utilitzeu les capacitats lingüístiques per col·laborar de manera transversal amb diversos equips i parts interessades per lliurar projectes a temps i dins del pressupost.",
       languages: {
+        title: "Languages",
+        EN: "English",
+        ES: "Español",
+        DE: "Deutsch",
+        FR: "Français",
+        CA: "Català",
+      },
+      languageSkills: {
         title: "Idiomes",
         EN: "Anglès",
         ES: "Espanyol",
