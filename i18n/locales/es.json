@@ -42,6 +42,9 @@
   },
   "projects": "Proyectos",
   "projectsList": {
+    "InvictoAI": {
+      "description": "Invicto AI es una plataforma innovadora diseñada para empoderar a los inversores en criptomonedas con un seguimiento de carteras avanzado y recomendaciones impulsadas por IA. Nuestro modelo de lenguaje propietario, entrenado en datos de los principales traders de criptomonedas, proporciona recomendaciones personalizadas según sus estrategias de inversión."
+    },
     "SignWise": {
       "description": "SignWise redefine las interacciones del usuario con la tecnología blockchain proporcionando soluciones innovadoras a desafíos prevalentes. Una experiencia Web2 con seguridad y propiedad Web3. Lo hacemos simple: Posea sus activos y sea su propio banco, transacciones sin comisiones ni gas, inicio de sesión social. (Sin frases semilla), experiencia sin fricciones."
     },
@@ -52,7 +55,7 @@
       "description": "Colaboré en un proyecto de equipo Chingu para crear un panel de control con información de criptomonedas extraída de la API de CoinGecko. Renderizado con React utilizando el Ant Design Muse Dashboard. Trabajé utilizando metodologías ágiles / scrum y un tablero kanban con otros 3 desarrolladores. Mis contribuciones personales incluyen configurar la autenticación de usuario y conectar la base de datos, crear una lista de vigilancia de monedas favoritas, almacenar las monedas favoritas en la base de datos para cada usuario."
     },
     "gameState": {
-      "description": "gameState es una aplicación creada con React y Firebase para buscar videojuegos utilizando la API RAWG y guardarlos en una de dos listas: juegos jugados y juegos por jugar."
+      "description": "gameState es una aplicación creada con Nuxt y Firebase para buscar videojuegos utilizando la API Twitch IGDB y guardarlos en una de dos listas: juegos jugados y juegos por jugar. Incluye estadísticas, galerías de capturas de pantalla y más."
     },
     "toDo": {
       "description": "Una aplicación de tareas pendientes creada con React, TypeScript y Firebase Realtime Database para realizar un seguimiento de tareas y proyectos. Más tarde creé una versión actualizada con Nuxt, convirtiéndola en una PWA, mejorando el flujo de inicio de sesión y las animaciones y trabajando en características adicionales."

@@ -42,6 +42,9 @@
   },
   "projects": "Projekte",
   "projectsList": {
+    "InvictoAI": {
+      "description": "Invicto AI ist eine innovative Plattform, die es Benutzern ermöglicht, ihre Kryptowährungsinformationen zu verfolgen und intelligente Handelsschlussfolgerungen zu treffen. Dank unseres proprietären Sprachmodells, das auf Daten von professionellen Kryptotradern trainiert wurde, können Sie individuelle Handelsschlussfolgerungen treffen und Ihre Investitionen optimal verwalten."
+    },
     "SignWise": {
       "description": "SignWise definiert die Benutzerinteraktionen mit Blockchain-Technologie neu, indem innovative Lösungen für verbreitete Herausforderungen bereitgestellt werden. Eine Web2-Erfahrung mit Web3-Sicherheit und -Eigentum. Wir machen es einfach: Besitzen Sie Ihre Vermögenswerte und seien Sie Ihre eigene Bank, gebühren und gasfreie Transaktionen, Social Login. (Keine Seedphrasen), Reibungsloses Erlebnis."
     },
@@ -52,7 +55,7 @@
       "description": "Zusammenarbeit in einem Chingu-Teamprojekt, um ein Dashboard mit Kryptowährungsinformationen aus der CoinGecko-API zu erstellen. Gerendert mit React unter Verwendung des Ant Design Muse Dashboards. Arbeitete mit agilen / Scrum-Methoden und einem Kanban-Board mit 3 anderen Entwicklern. Meine persönlichen Beiträge umfassen die Einrichtung der Benutzerauthentifizierung und die Verbindung der Datenbank, die Erstellung einer Favoritenmünzen-Watchlist, das Speichern der Favoritenmünzen in der Datenbank für jeden Benutzer."
     },
     "gameState": {
-      "description": "gameState ist eine App, die mit React und Firebase erstellt wurde, um Videospiele mit der RAWG-API zu suchen und sie in einer von zwei Listen zu speichern: gespielte Spiele und Spiele zum Spielen."
+      "description": "gameState ist eine App, die mit Nuxt und Firebase erstellt wurde, um Videospiele mit der Twitch IGDB API zu suchen und sie in einer von zwei Listen zu speichern: gespielte Spiele und Spiele zum Spielen. Enthält Statistiken, Bildschirmfotos und mehr."
     },
     "toDo": {
       "description": "Eine To-Do-App, die mit React, TypeScript und Firebase Realtime Database erstellt wurde, um Aufgaben und Projekte zu verfolgen. Später habe ich eine aktualisierte Version mit Nuxt erstellt, sie in eine PWA umgewandelt, den Anmeldeablauf und die Animationen verbessert und an zusätzlichen Funktionen gearbeitet."

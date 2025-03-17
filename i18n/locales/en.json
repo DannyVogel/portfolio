@@ -31,7 +31,7 @@
       "title": "Frontend Developer",
       "company": "GFAL",
       "date": "May 2023 - Present",
-      "description": "Spearheading the frontend development of the company's cutting-edge marketplace website, gfal.market, serving as a hub for a user's account and providing the ability to purchase in-game items using its crypto token. Integrating multiple services, including the ID platform, backend server, and a cryptocurrency exchange rate service, to deliver a user-friendly, responsive, and performant website experience."
+      "description": "Spearheading the frontend development of the company's cutting-edge marketplace, gfal.market, as well as the authentication platform GFAL ID. The projects integrate multiple services, including the marketplace backend, a custom cryptocurrency exchange rate service and web3 cryptocurrency wallets with account abstraction, and also prioritze a user-friendly, responsive, and performant website experience."
     },
     "Chingu": {
       "title": "Volunteer Frontend Developer",
@@ -42,6 +42,12 @@
   },
   "projects": "Projects",
   "projectsList": {
+    "InvictoAI": {
+      "description": "Invicto AI is an innovative platform designed to empower crypto investors with advanced portfolio tracking and AI-driven insights. Our proprietary language model, trained on data from top crypto traders, provides real-time recommendations tailored to your investment strategies."
+    },
+    "gameState": {
+      "description": "gameState is an app created with Nuxt and Firebase to search for videogames using the Twitch IGDB API and saving them two one of two lists: games played and games to play. Includes stats, screenshot galleries and more."
+    },
     "SignWise": {
       "description": "SignWise redefines user interactions with blockchain technology by providing innovative solutions to prevalent challenges. A Web2 experience with Web3 security & ownership. We make it simple: Own your assets & be your own bank, no gas fees, social login, (no seedphrases), frictionless experience."
     },
@@ -50,9 +56,6 @@
     },
     "CryptoWorld": {
       "description": "Collaborated in a Chingu team project to create a dashboard with cryptocurrency information pulled from the CoinGecko API. Rendered with React using the Ant Design Muse Dashboard. Worked using agile/scrum methodologies and a kanban board with 3 other developers. My personal contributions include setting up user authentication and connecting the database, creating a favorite coin watchlist, storing the favorite coins in the database for each user."
-    },
-    "gameState": {
-      "description": "gameState is an app created with React and Firebase to search for videogames using the RAWG API and saving them two one of two lists: games played and games to play."
     },
     "toDo": {
       "description": "A to-do app created with React, TypeScript, and Firebase Realtime Database to keep track of tasks and projects. I later created an updated version with Nuxt, converting it to a PWA, improving the log in flow and animations and working on additional features."
