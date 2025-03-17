@@ -6,7 +6,10 @@ const { locale } = useI18n();
   <div
     class="fixed bottom-4 md:bottom-8 print:hidden mx-auto left-0 right-0 flex w-full max-w-3xl px-6 md:px-10"
   >
-    <UPopover class="ml-auto" :popper="{ placement: 'top-end' }">
+    <UPopover
+      class="ml-auto"
+      :popper="{ placement: 'top-end' }"
+    >
       <UButton
         color="sky"
         size="sm"
@@ -18,7 +21,10 @@ const { locale } = useI18n();
 
       <template #panel="{ close }">
         <div class="p-5 grid grid-cols-2 gap-x-2">
-          <template v-for="lang in $i18n.availableLocales" :key="lang">
+          <template
+            v-for="lang in $i18n.availableLocales"
+            :key="lang"
+          >
             <p
               class="cursor-pointer hover:text-sky-500 py-1"
               :class="
@@ -31,7 +37,7 @@ const { locale } = useI18n();
                 }
               "
             >
-              {{ $t(`languages.${lang}`) }}
+              {{ $t(`languages.${lang.toUpperCase()}`) }}
             </p>
           </template>
         </div>
