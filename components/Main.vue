@@ -1,15 +1,4 @@
-<script lang="ts" setup>
-// import { chatModel } from "~/utils";
-
-// const askGpt = async () => {
-//   try {
-//     const res = await chatModel.invoke("List all red berries");
-//     console.log(res);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="mt-4 flex flex-col gap-6">
@@ -17,6 +6,5 @@
     <SkillsMain />
     <WorkMain />
     <ProjectsMain />
-    <!-- <UButton @click="askGpt">Ask GPT-3</UButton> -->
   </div>
 </template>
