@@ -1,0 +1,64 @@
+{
+  "welcome": "Welcome",
+  "title": "Frontend Developer",
+  "description": "Frontend developer with experience designing, developing, and maintaining user-friendly and responsive web apps. Utilize language capabilities to collaborate cross-functionally with multiple teams and stakeholders to deliver projects on-time and on-budget.",
+  "languages": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Español",
+    "DE": "Deutsch",
+    "FR": "Français",
+    "CA": "Català"
+  },
+  "languageSkills": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Spanish",
+    "DE": "German",
+    "FR": "French",
+    "CA": "Catalan"
+  },
+  "contact": {
+    "email": "Copy my email address",
+    "linkedin": "Go to my LinkedIn profile",
+    "github": "Go to my GitHub profile"
+  },
+  "copied": "Copied to clipboard!",
+  "techAndTools": "Technologies and Tools",
+  "workExperience": "Work Experience",
+  "jobs": {
+    "GFAL": {
+      "title": "Frontend Developer",
+      "company": "GFAL",
+      "date": "May 2023 - Present",
+      "description": "Spearheading the frontend development of the company's cutting-edge marketplace website, gfal.market, serving as a hub for a user's account and providing the ability to purchase in-game items using its crypto token. Integrating multiple services, including the ID platform, backend server, and a cryptocurrency exchange rate service, to deliver a user-friendly, responsive, and performant website experience."
+    },
+    "Chingu": {
+      "title": "Volunteer Frontend Developer",
+      "company": "Chingu",
+      "date": "March 2023 - May 2023",
+      "description": "Collaborated remotely with an international team to develop responsiveweb applications using agile and scrum methodologies. "
+    }
+  },
+  "projects": "Projects",
+  "projectsList": {
+    "SignWise": {
+      "description": "SignWise redefines user interactions with blockchain technology by providing innovative solutions to prevalent challenges. A Web2 experience with Web3 security & ownership. We make it simple: Own your assets & be your own bank, no gas fees, social login, (no seedphrases), frictionless experience."
+    },
+    "SoundScribe": {
+      "description": "A social media app where users can sign up to become Scribes, posting blog-style notes that must include a music video, or a Sounder, to simply browse the notes left by Scribes, leaving likes and comments."
+    },
+    "CryptoWorld": {
+      "description": "Collaborated in a Chingu team project to create a dashboard with cryptocurrency information pulled from the CoinGecko API. Rendered with React using the Ant Design Muse Dashboard. Worked using agile/scrum methodologies and a kanban board with 3 other developers. My personal contributions include setting up user authentication and connecting the database, creating a favorite coin watchlist, storing the favorite coins in the database for each user."
+    },
+    "gameState": {
+      "description": "gameState is an app created with React and Firebase to search for videogames using the RAWG API and saving them two one of two lists: games played and games to play."
+    },
+    "toDo": {
+      "description": "A to-do app created with React, TypeScript, and Firebase Realtime Database to keep track of tasks and projects. I later created an updated version with Nuxt, converting it to a PWA, improving the log in flow and animations and working on additional features."
+    },
+    "rockPaperScissors": {
+      "description": "A rock paper scissors game played against a computer and created without a framework using TypeScript, HTML and CSS."
+    }
+  }
+}

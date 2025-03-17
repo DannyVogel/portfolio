@@ -1,0 +1,64 @@
+{
+  "welcome": "Willkommen",
+  "title": "Frontend-Entwickler",
+  "description": "Frontend-Entwickler mit Erfahrung im Design, der Entwicklung und Wartung benutzerfreundlicher und responsiver Webanwendungen. Nutze Sprachkenntnisse, um in Zusammenarbeit mit mehreren Teams und Interessengruppen Projekte pünktlich und im Budget zu liefern.",
+  "languages": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Español",
+    "DE": "Deutsch",
+    "FR": "Français",
+    "CA": "Català"
+  },
+  "languageSkills": {
+    "title": "Sprachen",
+    "EN": "Englisch",
+    "ES": "Spanisch",
+    "DE": "Deutsch",
+    "FR": "Französisch",
+    "CA": "Katalanisch"
+  },
+  "contact": {
+    "email": "Kopieren Sie meine E-Mail-Adresse",
+    "linkedin": "Zu meinem LinkedIn-Profil gehen",
+    "github": "Zu meinem GitHub-Profil gehen"
+  },
+  "copied": "In die Zwischenablage kopiert!",
+  "techAndTools": "Technologien und Werkzeuge",
+  "workExperience": "Berufserfahrung",
+  "jobs": {
+    "GFAL": {
+      "title": "Frontend-Entwickler",
+      "company": "GFAL",
+      "date": "Mai 2023 - Heute",
+      "description": "Leitet die Frontend-Entwicklung der modernen Marktplatz-Website des Unternehmens, gfal.market, die als Hub für das Konto eines Benutzers dient und die Möglichkeit bietet, In-Game-Artikel mit seiner Kryptowährung zu kaufen. Integration mehrerer Dienste, einschließlich der ID-Plattform, des Backend-Servers und eines Kryptowährungswechselkurses, um eine benutzerfreundliche, responsive und leistungsstarke Website-Erfahrung zu bieten."
+    },
+    "Chingu": {
+      "title": "Freiwilliger Frontend-Entwickler",
+      "company": "Chingu",
+      "date": "März 2023 - Mai 2023",
+      "description": "Zusammenarbeit mit einem internationalen Team, um responsive Webanwendungen unter Verwendung agiler und Scrum-Methoden zu entwickeln."
+    }
+  },
+  "projects": "Projekte",
+  "projectsList": {
+    "SignWise": {
+      "description": "SignWise definiert die Benutzerinteraktionen mit Blockchain-Technologie neu, indem innovative Lösungen für verbreitete Herausforderungen bereitgestellt werden. Eine Web2-Erfahrung mit Web3-Sicherheit und -Eigentum. Wir machen es einfach: Besitzen Sie Ihre Vermögenswerte und seien Sie Ihre eigene Bank, gebühren und gasfreie Transaktionen, Social Login. (Keine Seedphrasen), Reibungsloses Erlebnis."
+    },
+    "SoundScribe": {
+      "description": "Eine Social-Media-App, bei der sich Benutzer anmelden können, um Scribes zu werden, Blog-Notizen zu veröffentlichen, die ein Musikvideo enthalten müssen, oder Sounder, um einfach die von Scribes hinterlassenen Notizen zu durchsuchen, Likes und Kommentare zu hinterlassen."
+    },
+    "CryptoWorld": {
+      "description": "Zusammenarbeit in einem Chingu-Teamprojekt, um ein Dashboard mit Kryptowährungsinformationen aus der CoinGecko-API zu erstellen. Gerendert mit React unter Verwendung des Ant Design Muse Dashboards. Arbeitete mit agilen / Scrum-Methoden und einem Kanban-Board mit 3 anderen Entwicklern. Meine persönlichen Beiträge umfassen die Einrichtung der Benutzerauthentifizierung und die Verbindung der Datenbank, die Erstellung einer Favoritenmünzen-Watchlist, das Speichern der Favoritenmünzen in der Datenbank für jeden Benutzer."
+    },
+    "gameState": {
+      "description": "gameState ist eine App, die mit React und Firebase erstellt wurde, um Videospiele mit der RAWG-API zu suchen und sie in einer von zwei Listen zu speichern: gespielte Spiele und Spiele zum Spielen."
+    },
+    "toDo": {
+      "description": "Eine To-Do-App, die mit React, TypeScript und Firebase Realtime Database erstellt wurde, um Aufgaben und Projekte zu verfolgen. Später habe ich eine aktualisierte Version mit Nuxt erstellt, sie in eine PWA umgewandelt, den Anmeldeablauf und die Animationen verbessert und an zusätzlichen Funktionen gearbeitet."
+    },
+    "rockPaperScissors": {
+      "description": "Ein Schere-Stein-Papier-Spiel, das gegen einen Computer gespielt und ohne Framework mit TypeScript, HTML und CSS erstellt wurde."
+    }
+  }
+}

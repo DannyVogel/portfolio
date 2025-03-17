@@ -1,0 +1,64 @@
+{
+  "welcome": "Bienvenue",
+  "title": "Développeur Frontend",
+  "description": "Développeur frontend avec une expérience dans la conception, le développement et la maintenance d'applications Web conviviales et responsive. Utilisez des compétences linguistiques pour collaborer de manière transversale avec plusieurs équipes et parties prenantes pour livrer des projets dans les délais et le budget.",
+  "languages": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Español",
+    "DE": "Deutsch",
+    "FR": "Français",
+    "CA": "Català"
+  },
+  "languageSkills": {
+    "title": "Langues",
+    "EN": "Anglais",
+    "ES": "Espagnol",
+    "DE": "Allemand",
+    "FR": "Français",
+    "CA": "Catalan"
+  },
+  "contact": {
+    "email": "Copier mon adresse e-mail",
+    "linkedin": "Aller à mon profil LinkedIn",
+    "github": "Aller à mon profil GitHub"
+  },
+  "copied": "Copié dans le presse-papiers!",
+  "techAndTools": "Technologies et outils",
+  "workExperience": "Expérience professionnelle",
+  "jobs": {
+    "GFAL": {
+      "title": "Développeur Frontend",
+      "company": "GFAL",
+      "date": "Mai 2023 - Aujourd'hui",
+      "description": "Diriger le développement frontend du site Web de pointe de l'entreprise, gfal.market, servant de hub pour le compte d'un utilisateur et offrant la possibilité d'acheter des articles de jeu à l'aide de sa crypto-monnaie. Intégration de plusieurs services, dont la plate-forme ID, le serveur backend et un service de taux de change de crypto-monnaie, pour offrir une expérience de site Web conviviale, responsive et performante."
+    },
+    "Chingu": {
+      "title": "Développeur Frontend bénévole",
+      "company": "Chingu",
+      "date": "Mars 2023 - Mai 2023",
+      "description": "Collaboration à distance avec une équipe internationale pour développer des applications Web responsive en utilisant des méthodologies agiles et Scrum."
+    }
+  },
+  "projects": "Projets",
+  "projectsList": {
+    "SignWise": {
+      "description": "SignWise redéfinit les interactions des utilisateurs avec la technologie blockchain en fournissant des solutions innovantes aux défis prévalents. Une expérience Web2 avec sécurité et propriété Web3. Nous simplifions: Possédez vos actifs et soyez votre propre banque, transactions sans frais ni gaz, connexion sociale. (Pas de phrases de départ), expérience sans friction."
+    },
+    "SoundScribe": {
+      "description": "Une application de médias sociaux où les utilisateurs peuvent s'inscrire pour devenir des Scribes, publier des notes de style blog qui doivent inclure une vidéo musicale, ou un Sounder, pour simplement parcourir les notes laissées par les Scribes, laissant des likes et des commentaires."
+    },
+    "CryptoWorld": {
+      "description": "Collaboré à un projet d'équipe Chingu pour créer un tableau de bord avec des informations sur les crypto-monnaies extraites de l'API CoinGecko. Rendu avec React en utilisant le tableau de bord Ant Design Muse. Travaillé avec des méthodologies agiles / Scrum et un tableau kanban avec 3 autres développeurs. Mes contributions personnelles incluent la configuration de l'authentification utilisateur et la connexion de la base de données, la création d'une liste de surveillance de pièces favorites, le stockage des pièces favorites dans la base de données pour chaque utilisateur."
+    },
+    "gameState": {
+      "description": "gameState est une application créée avec React et Firebase pour rechercher des jeux vidéo à l'aide de l'API RAWG et les enregistrer dans l'une des deux listes: jeux joués et jeux à jouer."
+    },
+    "toDo": {
+      "description": "Une application de tâches créée avec React, TypeScript et Firebase Realtime Database pour suivre les tâches et les projets. J'ai ensuite créé une version mise à jour avec Nuxt, la convertissant en PWA, améliorant le flux de connexion et les animations et travaillant sur des fonctionnalités supplémentaires."
+    },
+    "rockPaperScissors": {
+      "description": "Un jeu de pierre-papier-ciseaux joué contre un ordinateur et créé sans framework en utilisant TypeScript, HTML et CSS."
+    }
+  }
+}

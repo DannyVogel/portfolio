@@ -1,0 +1,64 @@
+{
+  "welcome": "Benvingut",
+  "title": "Desenvolupador Frontend",
+  "description": "Desenvolupador frontend amb experiència en el disseny, desenvolupament i manteniment d'aplicacions web fàcils d'utilitzar i responsive. Utilitzeu les capacitats lingüístiques per col·laborar de manera transversal amb diversos equips i parts interessades per lliurar projectes a temps i dins del pressupost.",
+  "languages": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Español",
+    "DE": "Deutsch",
+    "FR": "Français",
+    "CA": "Català"
+  },
+  "languageSkills": {
+    "title": "Idiomes",
+    "EN": "Anglès",
+    "ES": "Espanyol",
+    "DE": "Alemany",
+    "FR": "Francès",
+    "CA": "Català"
+  },
+  "contact": {
+    "email": "Copiar la meva adreça de correu electrònic",
+    "linkedin": "Anar al meu perfil de LinkedIn",
+    "github": "Anar al meu perfil de GitHub"
+  },
+  "copied": "Copiat al porta-retalls!",
+  "techAndTools": "Tecnologies i eines",
+  "workExperience": "Experiència laboral",
+  "jobs": {
+    "GFAL": {
+      "title": "Desenvolupador Frontend",
+      "company": "GFAL",
+      "date": "Maig 2023 - Present",
+      "description": "Dirigint el desenvolupament frontend del lloc web de vanguardia de l'empresa, gfal.market, que serveix com a centre del compte d'un usuari i proporciona la capacitat de comprar articles de jocs utilizando la seva criptomoneda. Integrant múltiples serveis, incloent la plataforma ID, el servidor backend i un servei de tipus de canvi de criptomonedes, per oferir una experiència de lloc web fàcil d'utilitzar, responsive i de gran rendiment."
+    },
+    "Chingu": {
+      "title": "Desenvolupador Frontend voluntari",
+      "company": "Chingu",
+      "date": "Març 2023 - Maig 2023",
+      "description": "Col·laboració a distància amb un equip internacional per desenvolupar aplicacions web responsive utilitzant metodologies àgils i Scrum."
+    }
+  },
+  "projects": "Projectes",
+  "projectsList": {
+    "SignWise": {
+      "description": "SignWise redefineix les interaccions de l'usuari amb la tecnologia blockchain proporcionant solucions innovadores als reptes prevalents. Una experiència Web2 amb seguretat i propietat Web3. Ho fem senzill: Poseu els vostres actius i sigui el vostre propi banc, transaccions sense comissions ni gas, inici de sessió social. (Sense frases de partida), experiència sense fricció."
+    },
+    "SoundScribe": {
+      "description": "Una aplicació de xarxes socials on els usuaris poden registrar-se per esdevenir Scribes, publicar notes d'estil blog que han d'incloure un vídeo musical, o un Sounder, per simplement navegar per les notes deixades pels Scribes, deixant m'agrada i comentaris."
+    },
+    "CryptoWorld": {
+      "description": "Col·laboració en un projecte d'equip Chingu per crear un tauler de control amb informació de criptomonedes extreta de l'API CoinGecko. Renderitzat amb React utilitzant el tauler de control Ant Design Muse. Vaig treballar utilitzant metodologies àgils / Scrum i un tauler kanban amb 3 altres desenvolupadors. Les meves contribucions personals inclouen la configuració de l'autenticació d'usuari i la connexió de la base de dades, la creació d'una llista de vigilància de monedes favorites, l'emmagatzematge de les monedes favorites a la base de dades per a cada usuari."
+    },
+    "gameState": {
+      "description": "gameState és una aplicació creada amb React i Firebase per buscar videojocs utilitzant l'API RAWG i desar-los en una de dues llistes: jocs jugats i jocs per jugar."
+    },
+    "toDo": {
+      "description": "Una aplicació de tasques creada amb React, TypeScript i Firebase Realtime Database per fer un seguiment de tasques i projectes. Més tard vaig crear una versió actualitzada amb Nuxt, convertint-la en una PWA, millorant el flux d'inici de sessió i les animacions i treballant en funcionalitats addicionals."
+    },
+    "rockPaperScissors": {
+      "description": "Un joc de pedra, paper o tisores jugat contra un ordinador i creat sense un marc utilitzant TypeScript, HTML i CSS."
+    }
+  }
+}

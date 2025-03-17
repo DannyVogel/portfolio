@@ -1,0 +1,64 @@
+{
+  "welcome": "Bienvenido",
+  "title": "Desarrollador Frontend",
+  "description": "Desarrollador frontend con experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web fáciles de usar y responsive. Utilizo mis habilidades lingüísticas para colaborar de manera transversal con múltiples equipos y partes interesadas para entregar proyectos a tiempo y dentro del presupuesto.",
+  "languages": {
+    "title": "Languages",
+    "EN": "English",
+    "ES": "Español",
+    "DE": "Deutsch",
+    "FR": "Français",
+    "CA": "Català"
+  },
+  "languageSkills": {
+    "title": "Idiomas",
+    "EN": "Inglés",
+    "ES": "Español",
+    "DE": "Alemán",
+    "FR": "Francés",
+    "CA": "Catalán"
+  },
+  "contact": {
+    "email": "Copiar mi dirección de correo electrónico",
+    "linkedin": "Ir a mi perfil de LinkedIn",
+    "github": "Ir a mi perfil de GitHub"
+  },
+  "copied": "¡Copiado al portapapeles!",
+  "techAndTools": "Tecnologías y Herramientas",
+  "workExperience": "Experiencia Laboral",
+  "jobs": {
+    "GFAL": {
+      "title": "Desarrollador Frontend",
+      "company": "GFAL",
+      "date": "Mayo 2023 - Presente",
+      "description": "Dirigiendo el desarrollo frontend del sitio web de vanguardia de la empresa, gfal.market, que sirve como centro de la cuenta de un usuario y proporciona la capacidad de comprar artículos de juegos usando su criptomoneda. Integrando múltiples servicios, incluida la plataforma ID, el servidor backend y un servicio de tipo de cambio de criptomonedas, para ofrecer una experiencia de sitio web fácil de usar, responsive y de alto rendimiento."
+    },
+    "Chingu": {
+      "title": "Desarrollador Frontend Voluntario",
+      "company": "Chingu",
+      "date": "Marzo 2023 - Mayo 2023",
+      "description": "Colaboró de forma remota con un equipo internacional para desarrollar aplicaciones web responsivas utilizando metodologías ágiles y scrum."
+    }
+  },
+  "projects": "Proyectos",
+  "projectsList": {
+    "SignWise": {
+      "description": "SignWise redefine las interacciones del usuario con la tecnología blockchain proporcionando soluciones innovadoras a desafíos prevalentes. Una experiencia Web2 con seguridad y propiedad Web3. Lo hacemos simple: Posea sus activos y sea su propio banco, transacciones sin comisiones ni gas, inicio de sesión social. (Sin frases semilla), experiencia sin fricciones."
+    },
+    "SoundScribe": {
+      "description": "Una aplicación de redes sociales donde los usuarios pueden registrarse para convertirse en Scribes, publicar notas de estilo blog que deben incluir un video musical, o un Sounder, para simplemente navegar por las notas dejadas por Scribes, dejando me gusta y comentarios."
+    },
+    "CryptoWorld": {
+      "description": "Colaboré en un proyecto de equipo Chingu para crear un panel de control con información de criptomonedas extraída de la API de CoinGecko. Renderizado con React utilizando el Ant Design Muse Dashboard. Trabajé utilizando metodologías ágiles / scrum y un tablero kanban con otros 3 desarrolladores. Mis contribuciones personales incluyen configurar la autenticación de usuario y conectar la base de datos, crear una lista de vigilancia de monedas favoritas, almacenar las monedas favoritas en la base de datos para cada usuario."
+    },
+    "gameState": {
+      "description": "gameState es una aplicación creada con React y Firebase para buscar videojuegos utilizando la API RAWG y guardarlos en una de dos listas: juegos jugados y juegos por jugar."
+    },
+    "toDo": {
+      "description": "Una aplicación de tareas pendientes creada con React, TypeScript y Firebase Realtime Database para realizar un seguimiento de tareas y proyectos. Más tarde creé una versión actualizada con Nuxt, convirtiéndola en una PWA, mejorando el flujo de inicio de sesión y las animaciones y trabajando en características adicionales."
+    },
+    "rockPaperScissors": {
+      "description": "Un juego de piedra, papel o tijera jugado contra un ordenador y creado sin un marco utilizando TypeScript, HTML y CSS."
+    }
+  }
+}

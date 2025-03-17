@@ -1,5 +1,3 @@
-import { getIconCollections } from "@egoist/tailwindcss-icons";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -15,6 +13,16 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "dark",
     fallback: "dark",
+  },
+
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+    defaultLocale: "en",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
   },
 
   // ui: {
