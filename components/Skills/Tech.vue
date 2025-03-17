@@ -11,7 +11,7 @@
         square
         variant="soft"
         icon="i-logos-typescript-icon"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="VueJS"
@@ -20,7 +20,7 @@
         square
         variant="soft"
         icon="i-logos-vue"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Nuxt"
@@ -29,7 +29,7 @@
         square
         variant="soft"
         icon="i-logos-nuxt-icon"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="React"
@@ -38,7 +38,7 @@
         square
         variant="soft"
         icon="i-logos-react"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Pinia"
@@ -47,7 +47,7 @@
         square
         variant="soft"
         icon="i-logos-pinia"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Tailwind"
@@ -56,7 +56,7 @@
         square
         variant="soft"
         icon="i-logos-tailwindcss-icon"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Firebase"
@@ -65,7 +65,7 @@
         square
         variant="soft"
         icon="i-logos-firebase"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="ViteJS"
@@ -74,7 +74,7 @@
         square
         variant="soft"
         icon="i-logos-vitejs"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="HTML5"
@@ -83,7 +83,7 @@
         square
         variant="soft"
         icon="i-logos-html-5"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="CSS3"
@@ -92,7 +92,7 @@
         square
         variant="soft"
         icon="i-logos-css-3"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Git"
@@ -101,7 +101,7 @@
         square
         variant="soft"
         icon="i-logos-git-icon"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Agile/Scrum"
@@ -110,7 +110,7 @@
         square
         variant="soft"
         icon="i-heroicons-user-group"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Jira"
@@ -119,7 +119,7 @@
         square
         variant="soft"
         icon="i-ph-list-checks"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
       <UButton
         label="Kanban"
@@ -128,7 +128,7 @@
         square
         variant="soft"
         icon="i-ph-kanban-duotone"
-        class="cursor-default"
+        class="cursor-default flex-shrink-0"
       />
     </div>
     <div class="mt-2 hidden print:flex gap-2 flex-wrap">
