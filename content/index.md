@@ -1,9 +1,9 @@
 # My First Page
 
-Here is some content.
+Here is some content. This is a test of the content renderer. Keep going. Writing to fill the page lalalalala.
 
-[Go to Vue Page](/garden/vue)
-[Go to Nuxt Page](/garden/nuxt)
-[Go to Typescript Page](/garden/typescript)
-[Go to Practices Page](/garden/practices)
-[Go to AI Page](/garden/ai)
+[Go to Vue Page](/garden/vue/components)
+
+[Go to Nuxt Page](/garden/nuxt/content)
+
+[Go to Typescript Page](/garden/typescript/patterns)
