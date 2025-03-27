@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@formkit/auto-animate",
     "@nuxtjs/google-fonts",
+    "@nuxt/content",
   ],
   colorMode: {
     preference: "dark",
