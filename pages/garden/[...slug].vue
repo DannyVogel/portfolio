@@ -1,8 +1,12 @@
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'garden'
+})
 const route = useRoute()
 console.log("path", route.path)
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('content').path(route.path).first()
+const contentPath = route.path.replace(/^\/garden/, '')
+const { data: page } = await useAsyncData('page', () => {
+  return queryCollection('content').path(contentPath).first()
 })
 </script>
 
@@ -14,7 +18,7 @@ const { data: page } = await useAsyncData(route.path, () => {
     <div class="empty-page">
       <h1>Page Not Found</h1>
       <p>Oops! The content you're looking for doesn't exist.</p>
-      <NuxtLink to="/">Go back home</NuxtLink>
+      <NuxtLink to="/garden">Go back home</NuxtLink>
     </div>
   </template>
 </template>
