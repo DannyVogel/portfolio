@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'garden'
-})
-const route = useRoute()
-console.log("path", route.path)
-const contentPath = route.path.replace(/^\/garden/, '')
-const { data: page } = await useAsyncData('page', () => {
-  return queryCollection('content').path(contentPath).first()
-})
+  layout: "garden",
+});
+const contentPath = useRoute().path.replace(/^\/garden/, "");
+const { data: page } = await useAsyncData("page", () => {
+  return queryCollection("content").path(contentPath).first();
+});
 </script>
 
 <template>
