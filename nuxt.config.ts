@@ -9,6 +9,18 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/content",
   ],
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: "one-dark-pro",
+        },
+      },
+    },
+    preview: {
+      api: "https://api.nuxt.studio",
+    },
+  },
   colorMode: {
     preference: "dark",
     fallback: "dark",
