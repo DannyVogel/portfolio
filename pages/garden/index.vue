@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'garden'
+})
 const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
 
 useSeoMeta({
