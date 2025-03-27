@@ -5,6 +5,10 @@ useSeoMeta({
   title: home.value?.title,
   description: home.value?.description
 })
+
+watch(home, () => {
+    console.log("home", home.value)
+}, {immediate: true})
 </script>
 
 <template>
