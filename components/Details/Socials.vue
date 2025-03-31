@@ -2,7 +2,7 @@
 const socials = [
   {
     icon: "i-ph-envelope-simple",
-    link: "danny.vogel@live.com",
+    link: "contact@danny-v.me",
     tooltipText: "contact.email",
     canCopy: true,
     type: "E-mail",
@@ -41,7 +41,10 @@ const openLink = (link: string) => {
 <template>
   <div>
     <div class="flex gap-2 print:hidden">
-      <template v-for="social in socials" :key="social">
+      <template
+        v-for="social in socials"
+        :key="social"
+      >
         <UTooltip :text="$t(social.tooltipText)">
           <UButton
             color="sky"
@@ -60,7 +63,10 @@ const openLink = (link: string) => {
       </template>
     </div>
     <div class="hidden print:flex flex-col">
-      <template v-for="social in socials" :key="social">
+      <template
+        v-for="social in socials"
+        :key="social"
+      >
         <p class="text-sm">
           {{ social.type }}:
           {{ social.link }}
