@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@formkit/auto-animate": "latest",
+    "@nuxt/content": "^3.4.0",
     "@nuxt/ui": "2.21.1",
     "@nuxtjs/google-fonts": "latest",
     "@nuxtjs/i18n": "latest",
@@ -23,6 +24,7 @@
     "@iconify-json/eos-icons": "latest",
     "@iconify-json/logos": "latest",
     "@iconify-json/noto-v1": "latest",
-    "@iconify-json/ph": "latest"
+    "@iconify-json/ph": "latest",
+    "@tailwindcss/typography": "^0.5.16"
   }
 }

@@ -9,7 +9,7 @@ useSeoMeta({
 
 <template>
   <NuxtLayout>
-    <Main />
+    <NuxtPage />
   </NuxtLayout>
   <UNotifications />
 </template>
