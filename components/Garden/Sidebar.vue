@@ -9,5 +9,7 @@
         Digital Garden
       </h1>
     </NuxtLink>
+    <GardenGraph />
+    <GardenNavigation />
   </div>
 </template>
