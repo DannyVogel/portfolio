@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const open = ref(false);
+const { isOpen } = useAppState();
 const { data } = await useAsyncData(
   "navigation",
   () => {
@@ -41,14 +41,39 @@ const dropdownItems = computed(() => {
 <template>
   <nav>
     <div class="block sm:hidden">
-      <!-- TODO: use USlideover -->
+      <USlideover v-model="isOpen">
+        <div class="pl-4 pr-2 py-4 flex justify-between">
+          <h1 class="text-2xl font-bold">Digital Garden</h1>
+          <UButton
+            color="gray"
+            variant="ghost"
+            size="sm"
+            icon="i-heroicons-x-mark-20-solid"
+            square
+            padded
+            @click="isOpen = false"
+          />
+        </div>
+        <div class="px-4">
+          <UAccordion
+            :items="data"
+            color="white"
+            variant="ghost"
+          >
+            <template #item="{ item }">
+              <template v-if="item.items">
+                <GardenNavigationItems :items="item.items" />
+              </template>
+            </template>
+          </UAccordion>
+        </div>
+      </USlideover>
     </div>
     <div class="hidden sm:block">
       <UAccordion
         :items="data"
         color="white"
         variant="ghost"
-        class="hidden sm:block"
       >
         <template #item="{ item }">
           <template v-if="item.items">
