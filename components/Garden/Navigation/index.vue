@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { isOpen } = useAppState();
+const { isSlideoverOpen, closeSlideover } = useAppState();
 const { data } = await useAsyncData(
   "navigation",
   () => {
@@ -41,7 +41,7 @@ const dropdownItems = computed(() => {
 <template>
   <nav>
     <div class="block sm:hidden">
-      <USlideover v-model="isOpen">
+      <USlideover v-model="isSlideoverOpen">
         <div class="pl-4 pr-2 py-4 flex justify-between">
           <h1 class="text-2xl font-bold">Digital Garden</h1>
           <UButton
@@ -51,7 +51,7 @@ const dropdownItems = computed(() => {
             icon="i-heroicons-x-mark-20-solid"
             square
             padded
-            @click="isOpen = false"
+            @click="closeSlideover"
           />
         </div>
         <div class="px-4">

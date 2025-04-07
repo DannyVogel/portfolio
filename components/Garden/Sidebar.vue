@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-const { open } = useAppState();
+const { openSlideover, openGraph } = useAppState();
 </script>
 
 <template>
-  <div class="sm:sticky sm:top-0 max-h-[calc(100vh-1rem)] mb-10 sm:mb-0 pt-4">
+  <div class="sm:sticky sm:top-0 max-h-[calc(100vh-1rem)] sm:mb-0 pt-4">
     <div class="flex items-center gap-2">
       <UButton
         icon="i-heroicons-bars-4"
         variant="ghost"
         color="white"
         class="sm:hidden mt-0.5"
-        @click="open"
+        @click="openSlideover"
       />
       <NuxtLink to="/garden">
         <h1
@@ -19,8 +19,20 @@ const { open } = useAppState();
           Digital Garden
         </h1>
       </NuxtLink>
+      <UButton
+        icon="i-heroicons-cube-transparent"
+        variant="ghost"
+        color="white"
+        class="sm:hidden ml-auto mt-0.5"
+        @click="openGraph"
+      />
     </div>
-    <GardenGraph />
+    <div class="hidden sm:block">
+      <GardenGraph />
+    </div>
+    <div class="sm:hidden">
+      <GardenGraphModal />
+    </div>
     <GardenNavigation />
   </div>
 </template>

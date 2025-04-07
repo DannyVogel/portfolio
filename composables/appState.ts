@@ -1,10 +1,25 @@
-const isOpen = ref(false);
+const isSlideoverOpen = ref(false);
+const isGraphOpen = ref(false);
+
 export const useAppState = () => {
-  const close = () => {
-    isOpen.value = false;
+  const closeSlideover = () => {
+    isSlideoverOpen.value = false;
   };
-  const open = () => {
-    isOpen.value = true;
+  const openSlideover = () => {
+    isSlideoverOpen.value = true;
   };
-  return { isOpen, close, open };
+  const closeGraph = () => {
+    isGraphOpen.value = false;
+  };
+  const openGraph = () => {
+    isGraphOpen.value = true;
+  };
+  return {
+    isSlideoverOpen,
+    closeSlideover,
+    openSlideover,
+    isGraphOpen,
+    closeGraph,
+    openGraph,
+  };
 };
