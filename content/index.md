@@ -1,4 +1,4 @@
-# My First Page
+# Welcome to the Garden
 
 Here is some content. This is a test of the content renderer. Keep going. Writing to fill the page lalalalala.
 
