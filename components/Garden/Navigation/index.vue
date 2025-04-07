@@ -8,6 +8,8 @@ const { data } = await useAsyncData(
   {
     transform: (data) => {
       return data.map((item) => {
+        if (item.title === "Ai") item.title = "AI";
+        if (item.title === "Typescript") item.title = "TypeScript";
         return {
           label: item.title,
           items: item.children?.map((child) => {
