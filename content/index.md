@@ -14,6 +14,6 @@ While my journey began as a frontend developer, I've since expanded my skills an
 
 I've learned a lot from the internet and I'm hoping to give back by sharing my knowledge, while also keeping track of the things I've learned and discovering the connections between seemingly disparate topics.
 
-Explore the garden by clicking on the article links in the sidebar. Take a look at [this article](/garden/ai/claude-github-mcp) to read about my workflow for creating articles for the garden.
+Begin exploring by clicking on the article links in the sidebar. Take a look at [this article](/garden/ai/claude-github-mcp) to read about my workflow for creating articles for the garden.
 
 To learn more about me, visit my [portfolio page](/).
