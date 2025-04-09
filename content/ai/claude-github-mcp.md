@@ -9,26 +9,25 @@ toc: true
 
 # Using Claude Desktop with GitHub MCP for Digital Garden Content
 
-Claude Desktop with GitHub's Model Context Protocol (MCP) server provides a powerful workflow for creating and managing content for Nuxt-based digital gardens. This approach combines AI assistance with direct repository access, streamlining the content creation process.
+Claude Desktop with GitHub's Model Context Protocol (MCP) server provides the ability to seemlessly generate content and upload content by providing the AI model with direct repository access. Based on user input, the AI model can generate the markdown content, with relevant frontmatter headers, tags and any desired styling, and then proceed to directly upload it to the repository via pull request.
 
 ## What is Model Context Protocol?
 
-Model Context Protocol (MCP) is GitHub's framework that enables AI models like Claude to interact directly with repositories through a standardized API. It provides:
+Model Context Protocol (MCP) is an open standard that allows AI models to connect to apps and data sources in a consistent way, providing the AI model the ability to interact with various tools. Examples include:
 
-- Direct file access and manipulation
-- Repository search capabilities
-- Branch and PR management
-- Content generation with repository awareness
+- Direct file access and manipulation (desktop files or google drive)
+- Github repository access and management
+- Controlling Blender or other 3D applications
+- Automating tasks in Excel or Google Sheets
+- Pulling design specs from Figma and generating code
 
-For digital garden maintainers, this means Claude can understand your content structure and assist with organization while maintaining consistent linking between articles.
+## Setting Up Claude Desktop to use pre-built MCP servers
 
-## Setting Up Claude Desktop with GitHub MCP
+A detailed setup guide can be found here:
+https://modelcontextprotocol.io/quickstart/user
 
-1. Install Claude Desktop application
-2. Enable developer tools in Claude settings
-3. Connect Claude to your GitHub account
-4. Grant repository permissions to the MCP server
-5. Start creating content with repository awareness
+A collection of pre-built MCP servers can be found here:
+https://github.com/modelcontextprotocol/servers
 
 ## Content Workflow for Nuxt Digital Gardens
 
@@ -37,7 +36,7 @@ The ideal workflow leverages Nuxt Content's strengths:
 ```vue
 <script setup>
 // Access dynamic content in your Nuxt components
-const { data: aiGeneratedContent } = await queryContent('/ai').find()
+const { data: aiGeneratedContent } = await queryContent("/ai").find();
 </script>
 ```
 
@@ -76,21 +75,13 @@ toc: true
 
 ## Best Practices
 
-1. **Be specific in prompts**: Give Claude clear direction on topic, scope and target audience
-2. **Review all generated links**: Verify that cross-references actually exist
-3. **Use consistent terminology**: Help Claude understand your personal knowledge taxonomy
-4. **Start branches with purpose-oriented names**: Use prefixes like `content/` or `feature/`
-5. **Leverage tags for organization**: Keep tags consistent across related content
-
-## Limitations and Considerations
-
-- Claude works best with plain markdown and may struggle with custom Vue components in markdown
-- Repository permissions should be carefully managed
-- Large repositories may take longer to analyze
-- Always review AI-generated content for accuracy
+1. **Be specific in prompts**: Give Claude clear direction on topic, scope and target audience.
+2. **Review all generated links**: Verify that cross-references actually exist.
+3. **Use consistent terminology**: Help Claude understand your personal knowledge taxonomy.
+4. **Leverage tags for organization**: Keep tags consistent across related content.
+5. **Review and refine**: AI is not perfect, and errors or misrepresentations will need to be corrected.
+6. **Limit Github access**: When generating the personal access token, limit the scope and permissions to only those needed to limit the risk of any unintended access and modifications.
 
 ## Next Steps
 
 - Explore [Nuxt Content benefits](/nuxt/nuxt-content-benefits) for your digital garden
-- Set up automated content workflows with GitHub Actions
-- Learn more about structured content organization
