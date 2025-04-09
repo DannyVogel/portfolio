@@ -1,8 +1,8 @@
 ---
-title: 'Benefits of Using Nuxt Content for Digital Gardens'
-description: 'Explore why Nuxt Content is an excellent choice for building and maintaining digital gardens'
+title: "Benefits of Using Nuxt Content for Digital Gardens"
+description: "Explore why Nuxt Content is an excellent choice for building and maintaining digital gardens"
 date: 2025-04-01
-tags: ['nuxt', 'content', 'digital-garden', 'tools']
+tags: ["nuxt", "content", "digital-garden", "tools"]
 ---
 
 # Benefits of Using Nuxt Content for Digital Gardens
@@ -38,17 +38,20 @@ The ability to embed Vue components directly in your Markdown creates powerful p
 
 ### 3. Composable content API
 
-With the composition API and `<script setup>`, working with content becomes incredibly intuitive:
+Nuxt Content provides a queryCollection composable with methods for querying and fetching your collections:
 
 ```vue
 <script setup>
-const { data: articles } = await useAsyncData('articles', () => {
-  return queryContent('/').where({ tags: { $contains: 'digital-garden' }}).find()
-})
+const { data: articles } = await useAsyncData("articles", () => {
+  return queryCollection("/")
+    .where({ tags: { $contains: "digital-garden" } })
+    .find();
+});
 </script>
 ```
 
 This allows you to easily:
+
 - Create backlinks between related content
 - Generate tag clouds and content graphs
 - Surface connections between your notes
@@ -72,6 +75,6 @@ Whether you're creating bi-directional links between notes, embedding interactiv
 
 ## Getting started
 
-If you're inspired to start your own digital garden with Nuxt Content, check out the [[Setting Up Nuxt Content]] guide or explore how this site implements features like [[Creating Backlinks in Nuxt Content]].
+If you're inspired to start your own digital garden with Nuxt Content, check out their [documentation](https://content.nuxt.com/docs/getting-started).
 
 The beauty of digital gardens is that they grow incrementally - you don't need to implement every feature at once. Start with basic Markdown content, then gradually add more sophisticated connections and components as your garden grows.

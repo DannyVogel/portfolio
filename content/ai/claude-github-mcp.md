@@ -36,7 +36,7 @@ The ideal workflow leverages Nuxt Content's strengths:
 ```vue
 <script setup>
 // Access dynamic content in your Nuxt components
-const { data: aiGeneratedContent } = await queryContent("/ai").find();
+const { data: aiGeneratedContent } = await queryCollection("/ai").find();
 </script>
 ```
 
@@ -50,13 +50,7 @@ const { data: aiGeneratedContent } = await queryContent("/ai").find();
 
 ## Cross-Linking with Existing Content
 
-Claude can analyze your repository to create meaningful connections:
-
-```markdown
-See also: [Advanced Nuxt Content Queries](/nuxt/content)
-```
-
-The AI identifies related content and creates appropriate wiki-style links, enhancing your digital garden's interconnectedness.
+Claude can analyze your repository to create meaningful connections. The AI identifies related content and creates appropriate wiki-style links, enhancing your digital garden's interconnectedness.
 
 ## Frontmatter Consistency
 
@@ -84,4 +78,4 @@ toc: true
 
 ## Next Steps
 
-- Explore [Nuxt Content benefits](/nuxt/nuxt-content-benefits) for your digital garden
+- Explore [Nuxt Content benefits](/garden/nuxt/nuxt-content-benefits) for your digital garden

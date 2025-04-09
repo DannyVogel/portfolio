@@ -13,11 +13,11 @@ When building a digital garden with Nuxt Content, knowing how to effectively que
 
 ## Basic Query Refresher
 
-The simplest way to fetch content is using the `queryContent()` composable:
+The simplest way to fetch content is using the `queryCollection()` composable:
 
 ```vue
 <script setup>
-const { data: articles } = await queryContent('/').find()
+const { data: articles } = await queryCollection("content").find();
 </script>
 ```
 
@@ -30,15 +30,13 @@ But the real power comes from more sophisticated queries.
 You can filter content based on any frontmatter property:
 
 ```js
-// Find all "evergreen" status content
-const { data: evergreenContent } = await queryContent('/')
-  .where({ status: 'evergreen' })
-  .find()
+const { data: evergreenContent } = await queryCollection("content")
+  .where("status", "=", "evergreen")
+  .find();
 
-// Find all content with specific tags
-const { data: vueContent } = await queryContent('/')
-  .where({ tags: { $contains: 'vue' } })
-  .find()
+const { data: vueContent } = await queryCollection("content")
+  .where("tags", "CONTAINS", "vue")
+  .find();
 ```
 
 ### Using Operators
@@ -46,14 +44,12 @@ const { data: vueContent } = await queryContent('/')
 Nuxt Content supports MongoDB-like query operators:
 
 ```js
-// Content created in the last month
-const { data: recentContent } = await queryContent('/')
-  .where({ 
-    date: { 
-      $gt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString() 
-    } 
-  })
-  .find()
+const thirtyDaysAgo = new Date(
+  Date.now() - 30 * 24 * 60 * 60 * 1000
+).toISOString();
+const { data: recentContent } = await queryCollection("content")
+  .where("date", ">", thirtyDaysAgo)
+  .find();
 ```
 
 ## Sorting Results
@@ -61,15 +57,13 @@ const { data: recentContent } = await queryContent('/')
 Sort your content by any property:
 
 ```js
-// Sort by date, newest first
-const { data: articles } = await queryContent('/')
-  .sort({ date: -1 })
-  .find()
+const { data: articles } = await queryCollection("content")
+  .orderBy("date", "desc")
+  .find();
 
-// Sort alphabetically by title
-const { data: alphabetical } = await queryContent('/')
-  .sort({ title: 1 })
-  .find()
+const { data: alphabetical } = await queryCollection("content")
+  .orderBy("title", "asc")
+  .find();
 ```
 
 ## Limiting Results
@@ -77,11 +71,10 @@ const { data: alphabetical } = await queryContent('/')
 For performance, you might want to limit results:
 
 ```js
-// Get only the 5 most recent articles
-const { data: recentArticles } = await queryContent('/')
-  .sort({ date: -1 })
+const { data: recentArticles } = await queryCollection("content")
+  .orderBy("date", "desc")
   .limit(5)
-  .find()
+  .find();
 ```
 
 ## Aggregating Related Content
@@ -89,16 +82,13 @@ const { data: recentArticles } = await queryContent('/')
 You can build "related content" features using tags:
 
 ```js
-// Get related content based on shared tags
 const getRelatedContent = async (currentPath, tags) => {
-  return await queryContent('/')
-    .where({ 
-      _path: { $ne: currentPath },
-      tags: { $containsAny: tags }
-    })
+  return await queryCollection("content")
+    .where("path", "!=", currentPath)
+    .where("tags", "CONTAINS ANY", tags)
     .limit(3)
-    .find()
-}
+    .find();
+};
 ```
 
 ## Full-Text Search
@@ -106,10 +96,10 @@ const getRelatedContent = async (currentPath, tags) => {
 Nuxt Content v3 includes powerful full-text search:
 
 ```js
-// Search across all content
-const { data: searchResults } = await queryContent('/')
-  .search('composition api')
-  .find()
+const { data: searchResults } = await queryCollectionSearchSections(
+  "content",
+  "composition api"
+);
 ```
 
 ## Combining Multiple Query Conditions
@@ -117,19 +107,14 @@ const { data: searchResults } = await queryContent('/')
 Chain multiple conditions for complex queries:
 
 ```js
-// Advanced composite query
-const { data: featuredTutorials } = await queryContent('/')
-  .where({ 
-    tags: { $contains: 'tutorial' },
-    featured: true
-  })
-  .sort({ date: -1 })
+const { data: featuredTutorials } = await queryCollection("content")
+  .where("tags", "CONTAINS", "tutorial")
+  .where("featured", "=", true)
+  .orderBy("date", "desc")
   .limit(10)
-  .find()
+  .find();
 ```
 
 ## Next Steps
 
-- Create a [tag cloud component](/nuxt/components/tag-cloud)
-- Build a [related posts feature](/nuxt/components/related-posts)
-- Set up [content navigation](/nuxt/navigation)
+- See how Nuxt Content is used with AI to generate content in the [Claude Desktop with GitHub MCP for Digital Garden Content](/garden/ai/claude-github-mcp) guide
