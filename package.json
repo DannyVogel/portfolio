@@ -16,7 +16,7 @@
     "@nuxt/ui": "2.21.1",
     "@nuxtjs/google-fonts": "latest",
     "@nuxtjs/i18n": "latest",
-    "nuxt": "latest",
+    "nuxt": "^3.17.5",
     "vue": "latest",
     "vue-router": "latest"
   },
