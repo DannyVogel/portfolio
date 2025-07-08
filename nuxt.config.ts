@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@formkit/auto-animate",
     "@nuxtjs/google-fonts",
     "@nuxt/content",
+    "@artmizu/nuxt-prometheus",
   ],
   content: {
     build: {

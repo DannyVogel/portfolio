@@ -11,6 +11,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@artmizu/nuxt-prometheus": "^2.5.0",
     "@formkit/auto-animate": "latest",
     "@nuxt/content": "^3.6.3",
     "@nuxt/ui": "2.21.1",
@@ -21,9 +22,6 @@
     "vue-router": "latest"
   },
   "dependencies": {
-    "@grafana/faro-rollup-plugin": "^0.5.1",
-    "@grafana/faro-web-sdk": "^1.18.2",
-    "@grafana/faro-web-tracing": "^1.18.2",
     "@iconify-json/eos-icons": "latest",
     "@iconify-json/logos": "latest",
     "@iconify-json/noto-v1": "latest",
