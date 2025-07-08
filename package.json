@@ -12,11 +12,11 @@
   },
   "devDependencies": {
     "@formkit/auto-animate": "latest",
-    "@nuxt/content": "^3.4.0",
+    "@nuxt/content": "^3.6.3",
     "@nuxt/ui": "2.21.1",
     "@nuxtjs/google-fonts": "latest",
     "@nuxtjs/i18n": "latest",
-    "nuxt": "^3.17.5",
+    "nuxt": "^3.17.6",
     "vue": "latest",
     "vue-router": "latest"
   },
