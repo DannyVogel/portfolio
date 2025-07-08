@@ -11,7 +11,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@artmizu/nuxt-prometheus": "^2.5.0",
     "@formkit/auto-animate": "latest",
     "@nuxt/content": "^3.6.3",
     "@nuxt/ui": "2.21.1",
@@ -26,7 +25,11 @@
     "@iconify-json/logos": "latest",
     "@iconify-json/noto-v1": "latest",
     "@iconify-json/ph": "latest",
+    "@sentry/nuxt": "^9.35.0",
     "@tailwindcss/typography": "^0.5.16",
     "better-sqlite3": "^12.2.0"
+  },
+  "overrides": {
+    "@vercel/nft": "^0.27.4"
   }
 }
