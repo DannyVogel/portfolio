@@ -2,16 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-
   modules: [
     "@nuxt/ui",
     "@nuxtjs/i18n",
     "@formkit/auto-animate",
     "@nuxtjs/google-fonts",
     "@nuxt/content",
-    "@sentry/nuxt/module",
+    "@artmizu/nuxt-prometheus",
   ],
-
   content: {
     build: {
       markdown: {
@@ -24,12 +22,10 @@ export default defineNuxtConfig({
       api: "https://api.nuxt.studio",
     },
   },
-
   colorMode: {
     preference: "dark",
     fallback: "dark",
   },
-
   i18n: {
     vueI18n: "./i18n.config.ts",
     defaultLocale: "en",
@@ -39,23 +35,10 @@ export default defineNuxtConfig({
       redirectOn: "root",
     },
   },
-
   googleFonts: {
     families: {
       Kanit: true,
     },
   },
-
   compatibilityDate: "2025-03-17",
-
-  sentry: {
-    sourceMapsUploadOptions: {
-      org: "dannyvogel",
-      project: "javascript-nuxt",
-    },
-  },
-
-  sourcemap: {
-    client: "hidden",
-  },
 });
