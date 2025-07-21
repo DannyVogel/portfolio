@@ -3,9 +3,9 @@ definePageMeta({
   layout: "garden",
 });
 const contentPath = useRoute().path.replace(/^\/garden/, "");
-const { data: page } = await useAsyncData("page", () => {
-  return queryCollection("content").path(contentPath).first();
-});
+const { data: page } = await useAsyncData(`${contentPath}`, () =>
+  queryCollection("content").path(contentPath).first()
+);
 </script>
 
 <template>
