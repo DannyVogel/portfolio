@@ -37,6 +37,7 @@ function handleResponse(response: ApiResponse) {
 ```
 
 This approach has several issues:
+
 - Properties are optional, making it error-prone
 - Nothing prevents incompatible combinations (data + error)
 - TypeScript can't verify we've handled all cases
@@ -47,17 +48,17 @@ A discriminated union uses a common property (the "discriminant") to differentia
 
 ```typescript
 type ApiSuccess<T> = {
-  status: 'success';
+  status: "success";
   data: T;
 };
 
 type ApiError = {
-  status: 'error';
+  status: "error";
   error: string;
 };
 
 type ApiLoading = {
-  status: 'loading';
+  status: "loading";
 };
 
 type ApiResponse<T> = ApiSuccess<T> | ApiError | ApiLoading;
@@ -70,17 +71,17 @@ Now we can use exhaustive pattern matching:
 ```typescript
 function handleResponse<T>(response: ApiResponse<T>) {
   switch (response.status) {
-    case 'success':
+    case "success":
       // TypeScript knows response.data exists here
       return processData(response.data);
-    
-    case 'error':
-      // TypeScript knows response.error exists here  
+
+    case "error":
+      // TypeScript knows response.error exists here
       return showError(response.error);
-    
-    case 'loading':
+
+    case "loading":
       return showLoadingIndicator();
-    
+
     default:
       // Exhaustiveness check - this line should never execute
       // If we add a new status type, TypeScript will error here
@@ -95,29 +96,29 @@ function handleResponse<T>(response: ApiResponse<T>) {
 This pattern is particularly useful for state management:
 
 ```typescript
-type State = 
-  | { status: 'idle' }
-  | { status: 'loading' }
-  | { status: 'success', data: User[] }
-  | { status: 'error', error: Error };
+type State =
+  | { status: "idle" }
+  | { status: "loading" }
+  | { status: "success"; data: User[] }
+  | { status: "error"; error: Error };
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
-    case 'FETCH_START':
-      return { status: 'loading' };
-    
-    case 'FETCH_SUCCESS':
-      return { 
-        status: 'success', 
-        data: action.payload 
+    case "FETCH_START":
+      return { status: "loading" };
+
+    case "FETCH_SUCCESS":
+      return {
+        status: "success",
+        data: action.payload,
       };
-    
-    case 'FETCH_ERROR':
-      return { 
-        status: 'error', 
-        error: action.payload 
+
+    case "FETCH_ERROR":
+      return {
+        status: "error",
+        error: action.payload,
       };
-      
+
     default:
       return state;
   }
@@ -132,9 +133,3 @@ When working with Vue and Nuxt, discriminated unions help create type-safe:
 - Store states
 - API integrations
 - Form validation states
-
-## Related Patterns
-
-- [Type Guards](/typescript/type-guards)
-- [The Builder Pattern](/typescript/builder-pattern)
-- [State Machines](/typescript/state-machines)
