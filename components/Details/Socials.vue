@@ -65,7 +65,7 @@ const openLink = (link: string) => {
     <div class="hidden print:flex flex-col">
       <template
         v-for="social in socials"
-        :key="social"
+        :key="social.link"
       >
         <p class="text-sm">
           {{ social.type }}:
