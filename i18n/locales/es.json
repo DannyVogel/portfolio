@@ -27,6 +27,12 @@
   "techAndTools": "Tecnologías y Herramientas",
   "workExperience": "Experiencia Laboral",
   "jobs": {
+    "FlirtVentures": {
+      "title": "Desarrollador Frontend",
+      "company": "FlirtVentures",
+      "date": "Sept 2025 - Present",
+      "description": "Desarrollo del frontend de las aplicaciones de citas de la empresa, así como varias herramientas y servicios internos."
+    },
     "GFAL": {
       "title": "Desarrollador Frontend",
       "company": "GFAL",

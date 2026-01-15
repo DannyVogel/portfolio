@@ -1,6 +1,14 @@
 <script lang="ts" setup>
 const jobs = [
   {
+    company: "FlirtVentures",
+    companyLink: "https://flirtventures.com",
+    title: "jobs.FlirtVentures.title",
+    date: "jobs.FlirtVentures.date",
+    description: "jobs.FlirtVentures.description",
+    logo: "/img/flirtventures_logo.jpeg", 
+  },
+  {
     company: "Games for a Living",
     companyLink: "https://gfal.com",
     title: "jobs.GFAL.title",

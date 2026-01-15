@@ -27,6 +27,12 @@
   "techAndTools": "Tecnologies i eines",
   "workExperience": "Experiència laboral",
   "jobs": {
+    "FlirtVentures": {
+      "title": "Desenvolupador Frontend",
+      "company": "FlirtVentures",
+      "date": "Sept 2025 - Present",
+      "description": "Desenvolupament del frontend de les aplicacions de citas de la companyia, així com diverses eines i serveis interns."
+    },
     "GFAL": {
       "title": "Desenvolupador Frontend",
       "company": "GFAL",
