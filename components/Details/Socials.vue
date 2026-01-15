@@ -52,7 +52,7 @@ const openLink = (link: string) => {
             square
             variant="outline"
             :icon="social.icon"
-            :href="social.link"
+            :href="social.canCopy ? undefined : social.link"
             @click="
               social.canCopy
                 ? copyToClipBoard(social.link)
