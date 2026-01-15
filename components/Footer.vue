@@ -8,10 +8,10 @@ const { locale } = useI18n();
   >
     <UPopover
       class="ml-auto"
-      :popper="{ placement: 'top-end' }"
+      :content="{ side: 'top', align: 'end' }"
     >
       <UButton
-        color="sky"
+        color="info"
         size="sm"
         square
         variant="outline"
@@ -19,7 +19,7 @@ const { locale } = useI18n();
         class="bg-slate-900"
       />
 
-      <template #panel="{ close }">
+      <template #content="{ close }">
         <div class="p-5 grid grid-cols-2 gap-x-2">
           <template
             v-for="lang in $i18n.availableLocales"

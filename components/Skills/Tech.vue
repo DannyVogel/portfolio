@@ -6,7 +6,7 @@
     <div class="mt-2 flex gap-2 flex-wrap print:hidden">
       <UButton
         label="TypeScript"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -15,7 +15,7 @@
       />
       <UButton
         label="VueJS"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -24,7 +24,7 @@
       />
       <UButton
         label="Nuxt"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -33,7 +33,7 @@
       />
       <UButton
         label="React"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -42,7 +42,7 @@
       />
       <UButton
         label="Pinia"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -51,7 +51,7 @@
       />
       <UButton
         label="Tailwind"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -60,7 +60,7 @@
       />
       <UButton
         label="Firebase"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -69,7 +69,7 @@
       />
       <UButton
         label="ViteJS"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -78,7 +78,7 @@
       />
       <UButton
         label="HTML5"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -87,7 +87,7 @@
       />
       <UButton
         label="CSS3"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -96,7 +96,7 @@
       />
       <UButton
         label="Git"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -105,7 +105,7 @@
       />
       <UButton
         label="Agile/Scrum"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -114,7 +114,7 @@
       />
       <UButton
         label="Jira"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"
@@ -123,7 +123,7 @@
       />
       <UButton
         label="Kanban"
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"

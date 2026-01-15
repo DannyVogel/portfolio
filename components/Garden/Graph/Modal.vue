@@ -3,7 +3,7 @@ const { isGraphOpen } = useAppState();
 </script>
 
 <template>
-  <UModal v-model="isGraphOpen">
+  <UModal v-model:open="isGraphOpen">
     <GardenGraph />
   </UModal>
 </template>

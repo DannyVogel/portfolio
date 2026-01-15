@@ -9,5 +9,5 @@ defineProps({
 </script>
 
 <template>
-  <UIcon :name="name" dynamic />
+  <UIcon :name="name" />
 </template>

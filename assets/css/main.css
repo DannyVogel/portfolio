@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-family-sans: "Kanit", sans-serif;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}

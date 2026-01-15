@@ -2,11 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
+  css: ["~/assets/css/main.css"],
   modules: [
     "@nuxt/ui",
     "@nuxtjs/i18n",
     "@formkit/auto-animate",
-    "@nuxtjs/google-fonts",
+    "@nuxt/fonts",
     "@nuxt/content",
     "@artmizu/nuxt-prometheus",
   ],
@@ -35,10 +36,13 @@ export default defineNuxtConfig({
       redirectOn: "root",
     },
   },
-  googleFonts: {
-    families: {
-      Kanit: true,
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700],
     },
+    families: [
+      { name: "Inter", provider: "google" },
+    ],
   },
   compatibilityDate: "2025-03-17",
 });

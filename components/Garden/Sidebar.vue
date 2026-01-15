@@ -8,7 +8,7 @@ const { openSlideover, openGraph } = useAppState();
       <UButton
         icon="i-heroicons-bars-4"
         variant="ghost"
-        color="white"
+        color="neutral"
         class="sm:hidden mt-0.5"
         @click="openSlideover"
       />
@@ -22,7 +22,7 @@ const { openSlideover, openGraph } = useAppState();
       <UButton
         icon="i-heroicons-cube-transparent"
         variant="ghost"
-        color="white"
+        color="neutral"
         class="sm:hidden ml-auto mt-0.5"
         @click="openGraph"
       />

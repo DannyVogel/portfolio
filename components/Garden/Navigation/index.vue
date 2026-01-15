@@ -12,6 +12,7 @@ const { data } = await useAsyncData(
         if (item.title === "Typescript") item.title = "TypeScript";
         return {
           label: item.title,
+          value: item.title,
           items: item.children?.map((child) => {
             return {
               label: child.title,
@@ -41,11 +42,11 @@ const dropdownItems = computed(() => {
 <template>
   <nav>
     <div class="block sm:hidden">
-      <USlideover v-model="isSlideoverOpen">
+      <USlideover v-model:open="isSlideoverOpen">
         <div class="pl-4 pr-2 py-4 flex justify-between">
           <h1 class="text-2xl font-bold">Digital Garden</h1>
           <UButton
-            color="gray"
+            color="neutral"
             variant="ghost"
             size="sm"
             icon="i-heroicons-x-mark-20-solid"
@@ -55,12 +56,8 @@ const dropdownItems = computed(() => {
           />
         </div>
         <div class="px-4">
-          <UAccordion
-            :items="data"
-            color="white"
-            variant="ghost"
-          >
-            <template #item="{ item }">
+          <UAccordion :items="data">
+            <template #content="{ item }">
               <template v-if="item.items">
                 <GardenNavigationItems :items="item.items" />
               </template>
@@ -70,12 +67,8 @@ const dropdownItems = computed(() => {
       </USlideover>
     </div>
     <div class="hidden sm:block">
-      <UAccordion
-        :items="data"
-        color="white"
-        variant="ghost"
-      >
-        <template #item="{ item }">
+      <UAccordion :items="data">
+        <template #content="{ item }">
           <template v-if="item.items">
             <GardenNavigationItems :items="item.items" />
           </template>

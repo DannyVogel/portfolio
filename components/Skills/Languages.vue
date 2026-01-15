@@ -26,7 +26,7 @@ const languages = {
       <template v-for="(language, key) in languages" :key="key">
         <UButton
           :label="$t(`languageSkills.${language.locale}`)"
-          color="sky"
+          color="info"
           size="xs"
           square
           variant="soft"
@@ -35,7 +35,7 @@ const languages = {
         />
       </template>
       <UButton
-        color="sky"
+        color="info"
         size="xs"
         square
         variant="soft"

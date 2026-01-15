@@ -11,13 +11,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@artmizu/nuxt-prometheus": "^2.5.0",
+    "@artmizu/nuxt-prometheus": "^2.7.0",
     "@formkit/auto-animate": "latest",
-    "@nuxt/content": "^3.6.3",
-    "@nuxt/ui": "2.21.1",
-    "@nuxtjs/google-fonts": "latest",
+    "@nuxt/content": "^3.10.0",
+    "@nuxt/ui": "4.3.0",
+    "@nuxt/fonts": "latest",
     "@nuxtjs/i18n": "latest",
-    "nuxt": "^3.17.6",
+    "nuxt": "^4.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -26,7 +26,6 @@
     "@iconify-json/logos": "latest",
     "@iconify-json/noto-v1": "latest",
     "@iconify-json/ph": "latest",
-    "@tailwindcss/typography": "^0.5.16",
-    "better-sqlite3": "^12.2.0"
+    "better-sqlite3": "^12.6.0"
   }
 }

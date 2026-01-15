@@ -43,11 +43,11 @@ const openLink = (link: string) => {
     <div class="flex gap-2 print:hidden">
       <template
         v-for="social in socials"
-        :key="social"
+        :key="social.link"
       >
         <UTooltip :text="$t(social.tooltipText)">
           <UButton
-            color="sky"
+            color="info"
             size="sm"
             square
             variant="outline"
