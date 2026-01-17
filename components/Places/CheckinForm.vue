@@ -56,21 +56,23 @@ async function handleSubmit() {
 
 <template>
   <form class="flex flex-col gap-4" @submit.prevent="handleSubmit">
-    <UFormField label="Google Maps URL" required>
+    <UFormField label="Google Maps URL" required class="flex-1">
       <UInput
         v-model="url"
         placeholder="https://maps.app.goo.gl/..."
         icon="i-ph-map-pin"
         :disabled="loading"
+        class="w-full"
       />
     </UFormField>
 
-    <UFormField label="Date">
+    <UFormField label="Date" class="flex-1" >
       <UInput
         v-model="date"
         type="date"
         icon="i-ph-calendar"
         :disabled="loading"
+        class="w-full"
       />
     </UFormField>
 
