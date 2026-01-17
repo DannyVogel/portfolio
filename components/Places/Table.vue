@@ -42,6 +42,7 @@ const columns: TableColumn<Venue>[] = [
   {
     accessorKey: 'country',
     header: 'Country',
+    cell: ({ row }) => row.original.country ?? 'Unknown',
   },
   {
     accessorKey: 'visitCount',

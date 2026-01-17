@@ -3,6 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   css: ["~/assets/css/main.css"],
+  runtimeConfig: {
+    placesPassword: '',
+    public: {
+      placesApiUrl: '',
+      placesApiKey: '',
+    },
+  },
   modules: [
     "@nuxt/ui",
     "@nuxtjs/i18n",

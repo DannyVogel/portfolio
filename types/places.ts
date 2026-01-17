@@ -3,28 +3,41 @@ export interface Venue {
   name: string
   lat: number
   lng: number
-  country: string
+  country: string | null
   visitCount: number
-  firstVisit: string
-  lastVisit: string
+  firstVisit: string  // YYYY-MM-DD
+  lastVisit: string   // YYYY-MM-DD
 }
 
 export interface PlacesStats {
   totalVenues: number
   totalCheckins: number
-  totalCountries: number
   countries: string[]
   dateRange: {
-    start: string
-    end: string
+    first: string
+    last: string
   }
-  topVenues: {
-    name: string
-    count: number
-  }[]
+  topVenues: Venue[]
 }
 
-export interface PlacesData {
+export interface PlacesResponse {
   venues: Venue[]
   stats: PlacesStats
+}
+
+export interface CheckinRequest {
+  url?: string
+  name?: string
+  lat?: number
+  lng?: number
+  date?: string  // YYYY-MM-DD, optional override
+}
+
+export interface CheckinResponse {
+  status_code: number
+  message: string
+  data: {
+    venue: Venue
+    isNew: boolean
+  }
 }
