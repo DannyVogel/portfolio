@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
   ],
   nitro: {
-    preset: "cloudflare_module",
+    preset: "cloudflare_pages",
     cloudflare: {
       deployConfig: true,
       nodeCompat: true
