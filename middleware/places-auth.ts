@@ -1,5 +1,7 @@
 export default defineNuxtRouteMiddleware(async (to) => {
   console.log('[middleware] places-auth started', { path: to.path, query: to.query })
+  const config = useRuntimeConfig().public
+  console.log('config', config)
   const authCookie = useCookie('places-auth', { maxAge: 60 * 60 * 24 * 7 }) // 7 days
 
   // Verify existing token with server
