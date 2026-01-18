@@ -1,3 +1,40 @@
+import type { H3Event } from 'h3'
+
+type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'critical'
+
+async function log(
+  event: H3Event,
+  level: LogLevel,
+  message: string,
+  metadata?: Record<string, any>
+) {
+  const config = useRuntimeConfig()
+  const baseUrl = config.public.placesApiUrl
+  const apiKey = config.loggerApiKey
+
+  if (!baseUrl || !apiKey) return
+
+  try {
+    await $fetch(`${baseUrl}/logger`, {
+      method: 'POST',
+      headers: {
+        'X-API-Key': apiKey,
+        'Content-Type': 'application/json',
+      },
+      body: {
+        level,
+        message,
+        source: 'places-client',
+        ip_address: getHeader(event, 'x-forwarded-for') || getHeader(event, 'x-real-ip'),
+        user_agent: getHeader(event, 'user-agent'),
+        metadata,
+      },
+    })
+  } catch {
+    // Silently fail - don't let logging errors break auth
+  }
+}
+
 async function generateToken(password: string): Promise<string> {
   const encoder = new TextEncoder()
   const key = await crypto.subtle.importKey(
@@ -14,44 +51,40 @@ async function generateToken(password: string): Promise<string> {
 }
 
 export default defineEventHandler(async (event) => {
-  console.log('[api] places-auth called')
+  await log(event, 'debug', 'places-auth called')
   try {
     const config = useRuntimeConfig()
     const password = config.placesPassword
-    console.log('[api] password configured:', !!password)
 
     // No password configured = deny access
     if (!password) {
-      console.log('[api] no password configured, denying')
+      await log(event, 'warn', 'No password configured, denying access')
       return { authorized: false, error: 'No password configured' }
     }
 
     const query = getQuery(event)
     const providedPassword = query.p as string
     const providedToken = query.token as string
-    console.log('[api] query params:', { hasPassword: !!providedPassword, hasToken: !!providedToken })
 
     // Verify existing token
     if (providedToken) {
-      console.log('[api] verifying token')
       const validToken = await generateToken(password)
       const isValid = providedToken === validToken
-      console.log('[api] token valid:', isValid)
+      await log(event, 'debug', 'Token verification', { isValid })
       return { authorized: isValid }
     }
 
     // Validate password and return token
     if (providedPassword === password) {
-      console.log('[api] password correct, generating token')
       const token = await generateToken(password)
-      console.log('[api] token generated')
+      await log(event, 'info', 'Password authenticated, token generated')
       return { authorized: true, token }
     }
 
-    console.log('[api] password incorrect or not provided')
+    await log(event, 'debug', 'Authentication failed - invalid password or not provided')
     return { authorized: false }
-  } catch (err) {
-    console.error('[api] error:', err)
+  } catch (err: any) {
+    await log(event, 'error', 'Places auth error', { error: err.message, stack: err.stack })
     return { authorized: false, error: String(err) }
   }
 })

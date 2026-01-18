@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   runtimeConfig: {
     placesPassword: '',
+    loggerApiKey: '',
     public: {
       placesApiUrl: '',
       placesApiKey: '',
