@@ -8,6 +8,7 @@ async function log(
   message: string,
   metadata?: Record<string, any>
 ) {
+  console.log('logging', { level, message, metadata })
   const config = useRuntimeConfig()
   const baseUrl = config.public.placesApiUrl
   const apiKey = config.loggerApiKey
