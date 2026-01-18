@@ -1,4 +1,4 @@
-import crypto from 'node:crypto'
+import crypto from 'crypto'
 
 function generateToken(password: string): string {
   return crypto.createHmac('sha256', password).update('places-auth').digest('hex')
