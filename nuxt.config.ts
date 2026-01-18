@@ -18,6 +18,13 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/content",
   ],
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true
+    }
+  },
   content: {
     build: {
       markdown: {
