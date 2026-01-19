@@ -9,6 +9,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   venueClick: [venueName: string]
+  delete: [venueId: string]
 }>()
 
 const search = ref('')
@@ -28,11 +29,20 @@ const filteredVenues = computed(() => {
 
   if (search.value) {
     const query = search.value.toLowerCase()
-    result = result.filter(v => v.name.toLowerCase().includes(query))
+    result = result.filter(v =>
+      v.name.toLowerCase().includes(query) ||
+      v.city?.toLowerCase().includes(query) ||
+      v.address?.toLowerCase().includes(query)
+    )
   }
 
   return result
 })
+
+function formatLocation(venue: Venue): string {
+  const parts = [venue.city, venue.state, venue.country].filter(Boolean)
+  return parts.length > 0 ? parts.join(', ') : 'Unknown'
+}
 
 const columns: TableColumn<Venue>[] = [
   {
@@ -40,9 +50,9 @@ const columns: TableColumn<Venue>[] = [
     header: 'Name',
   },
   {
-    accessorKey: 'country',
-    header: 'Country',
-    cell: ({ row }) => row.original.country ?? 'Unknown',
+    accessorKey: 'city',
+    header: 'Location',
+    cell: ({ row }) => formatLocation(row.original),
   },
   {
     accessorKey: 'visitCount',
@@ -56,7 +66,16 @@ const columns: TableColumn<Venue>[] = [
     accessorKey: 'lastVisit',
     header: 'Last Visit',
   },
+  {
+    id: 'actions',
+    header: '',
+  },
 ]
+
+function onDelete(venueId: string, event: Event) {
+  event.stopPropagation()
+  emit('delete', venueId)
+}
 
 function onRowSelect(_event: Event, row: { original: Venue }) {
   emit('venueClick', row.original.name)
@@ -90,6 +109,16 @@ function onRowSelect(_event: Event, row: { original: Venue }) {
       class="h-[400px]"
       :ui="{ tr: 'cursor-pointer' }"
       @select="onRowSelect"
-    />
+    >
+      <template #actions-cell="{ row }">
+        <UButton
+          icon="i-ph-trash"
+          color="error"
+          variant="ghost"
+          size="xs"
+          @click="onDelete(row.original.id, $event)"
+        />
+      </template>
+    </UTable>
   </div>
 </template>

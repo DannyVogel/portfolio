@@ -1,4 +1,4 @@
-import type { PlacesResponse, CheckinRequest, CheckinResponse } from '~/types/places'
+import type { PlacesResponse, CheckinRequest, CheckinResponse, DeleteResponse } from '~/types/places'
 
 export const usePlacesApi = () => {
   const config = useRuntimeConfig()
@@ -36,8 +36,19 @@ export const usePlacesApi = () => {
     return response
   }
 
+  const deletePlace = async (venueId: string): Promise<DeleteResponse> => {
+    const response = await $fetch<DeleteResponse>(`${baseUrl}/places/${venueId}`, {
+      method: 'DELETE',
+      headers: {
+        'x-api-key': apiKey,
+      },
+    })
+    return response
+  }
+
   return {
     fetchPlaces,
     checkin,
+    deletePlace,
   }
 }

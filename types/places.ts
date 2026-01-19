@@ -3,7 +3,12 @@ export interface Venue {
   name: string
   lat: number
   lng: number
+  address: string | null
+  city: string | null
+  state: string | null
   country: string | null
+  postcode: string | null
+  googleMapsUrl: string | null
   visitCount: number
   firstVisit: string  // YYYY-MM-DD
   lastVisit: string   // YYYY-MM-DD
@@ -39,5 +44,13 @@ export interface CheckinResponse {
   data: {
     venue: Venue
     isNew: boolean
+  }
+}
+
+export interface DeleteResponse {
+  success: boolean
+  deleted: {
+    id: string
+    name: string
   }
 }

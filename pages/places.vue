@@ -1,17 +1,56 @@
 <script setup lang="ts">
+import type { Venue } from '~/types/places'
+
 definePageMeta({
   layout: 'fullwidth',
   middleware: 'places-auth',
 })
 
-const { fetchPlaces } = usePlacesApi()
+const toast = useToast()
+const { fetchPlaces, deletePlace } = usePlacesApi()
 const { data, status, refresh } = await fetchPlaces()
 const mapRef = ref<{ resetZoom: () => void; focusVenue: (name: string) => void } | null>(null)
 const showCheckinForm = ref(false)
+const showDeleteConfirm = ref(false)
+const venueToDelete = ref<Venue | null>(null)
+const isDeleting = ref(false)
 
 async function onCheckinSuccess() {
   showCheckinForm.value = false
   await refresh()
+}
+
+function onDeleteRequest(venueId: string) {
+  const venue = data.value?.venues.find(v => v.id === venueId)
+  if (venue) {
+    venueToDelete.value = venue
+    showDeleteConfirm.value = true
+  }
+}
+
+async function confirmDelete() {
+  if (!venueToDelete.value) return
+
+  isDeleting.value = true
+  try {
+    await deletePlace(venueToDelete.value.id)
+    toast.add({
+      title: 'Place deleted',
+      description: `${venueToDelete.value.name} has been removed.`,
+      color: 'success',
+    })
+    showDeleteConfirm.value = false
+    venueToDelete.value = null
+    await refresh()
+  } catch (error) {
+    toast.add({
+      title: 'Failed to delete',
+      description: 'An error occurred while deleting the place.',
+      color: 'error',
+    })
+  } finally {
+    isDeleting.value = false
+  }
 }
 </script>
 
@@ -41,11 +80,11 @@ async function onCheckinSuccess() {
       <!-- Map and Stats -->
       <div class="flex flex-col gap-4">
         <div class="flex-1 h-[60vh] md:h-[60vh] relative">
-          <PlacesMap ref="mapRef" :venues="data.venues" />
+          <PlacesMap ref="mapRef" :venues="data.venues" @delete="onDeleteRequest" />
           <UButton
             class="absolute top-3 right-3 z-[1000]"
             icon="i-ph-arrows-out"
-            color="gray"
+            color="neutral"
             size="sm"
             @click="mapRef?.resetZoom()"
           >
@@ -62,6 +101,7 @@ async function onCheckinSuccess() {
         :venues="data.venues"
         :countries="data.stats.countries"
         @venue-click="mapRef?.focusVenue($event)"
+        @delete="onDeleteRequest"
       />
     </div>
 
@@ -74,6 +114,34 @@ async function onCheckinSuccess() {
     <UModal v-model:open="showCheckinForm" title="New Check-in" description="Add a new place to your map">
       <template #body>
         <PlacesCheckinForm @success="onCheckinSuccess" @cancel="showCheckinForm = false" />
+      </template>
+    </UModal>
+
+    <!-- Delete Confirmation Modal -->
+    <UModal v-model:open="showDeleteConfirm" title="Delete Place" description="This action cannot be undone.">
+      <template #body>
+        <div class="flex flex-col gap-4">
+          <p>
+            Are you sure you want to delete <strong>{{ venueToDelete?.name }}</strong>?
+          </p>
+          <div class="flex justify-end gap-2">
+            <UButton
+              color="neutral"
+              variant="outline"
+              :disabled="isDeleting"
+              @click="showDeleteConfirm = false"
+            >
+              Cancel
+            </UButton>
+            <UButton
+              color="error"
+              :loading="isDeleting"
+              @click="confirmDelete"
+            >
+              Delete
+            </UButton>
+          </div>
+        </div>
       </template>
     </UModal>
   </div>
