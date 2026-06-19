@@ -64,7 +64,7 @@
       "description": "Col·laboració en un projecte d'equip Chingu per crear un tauler de control amb informació de criptomonedes extreta de l'API CoinGecko. Renderitzat amb React utilitzant el tauler de control Ant Design Muse. Vaig treballar utilitzant metodologies àgils / Scrum i un tauler kanban amb 3 altres desenvolupadors. Les meves contribucions personals inclouen la configuració de l'autenticació d'usuari i la connexió de la base de dades, la creació d'una llista de vigilància de monedes favorites, l'emmagatzematge de les monedes favorites a la base de dades per a cada usuari."
     },
     "gameState": {
-      "description": "gameState és una aplicació creada amb Nuxt i Firebase per buscar videojocs utilitzant l'API Twitch IGDB i desar-los en una de dues llistes: jocs jugats i jocs per jugar. Inclou estats, galeries de captures d'escena i més."
+      "description": "Una PWA en Vue 3 per gestionar la teva biblioteca de jocs, amb cerca a través de l'API d'IGDB. Els jocs es poden categoritzar per estat de joc, amb estadístiques i galeries de captures de pantalla. Autenticació mitjançant passkey, amb dades sincronitzades a través del backend The Monolith."
     },
     "toDo": {
       "description": "Una aplicació de tasques creada amb React, TypeScript i Firebase Realtime Database per fer un seguiment de tasques i projectes. Més tard vaig crear una versió actualitzada amb Nuxt, convertint-la en una PWA, millorant el flux d'inici de sessió i les animacions i treballant en funcionalitats addicionals."

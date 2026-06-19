@@ -55,7 +55,7 @@
       "description": "Invicto AI is an innovative platform designed to empower crypto investors with advanced portfolio tracking and AI-driven insights. Our proprietary language model, trained on data from top crypto traders, provides real-time recommendations tailored to your investment strategies."
     },
     "gameState": {
-      "description": "gameState is an app created with Nuxt and Firebase to search for videogames using the Twitch IGDB API and saving them two one of two lists: games played and games to play. Includes stats, screenshot galleries and more."
+      "description": "A Vue 3 PWA for tracking your game library, searchable via the IGDB API. Games can be categorized by play status with stats and screenshot galleries. Authenticates via passkey, with data synced through The Monolith backend."
     },
     "SignWise": {
       "description": "SignWise redefines user interactions with blockchain technology by providing innovative solutions to prevalent challenges. A Web2 experience with Web3 security & ownership. We make it simple: Own your assets & be your own bank, no gas fees, social login, (no seedphrases), frictionless experience."

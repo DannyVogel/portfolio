@@ -29,10 +29,10 @@ const projects = [
     description: "projectsList.gameState.description",
     logo: "/img/gameState.png",
     techStack: {
-      Nuxt: "i-logos-nuxt-icon",
+      Vue: "i-logos-vue",
       TypeScript: "i-logos-typescript-icon",
+      Vite: "i-logos-vitejs",
       TailwindCSS: "i-logos-tailwindcss-icon",
-      Firebase: "i-logos-firebase",
     },
   },
   {
