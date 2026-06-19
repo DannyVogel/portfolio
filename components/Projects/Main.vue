@@ -49,7 +49,6 @@ const projects = [
   },
   {
     title: "SoundScribe",
-    link: "https://dv-soundscribe.netlify.app/",
     description: "projectsList.SoundScribe.description",
     logo: "/img/soundScribe.png",
     techStack: {
@@ -60,7 +59,6 @@ const projects = [
   },
   {
     title: "ToDo",
-    link: "https://todo-2f3e3.web.app/",
     description: "projectsList.toDo.description",
     logo: "/img/toDo.png",
     techStack: {
@@ -82,23 +80,24 @@ const projects = [
       >
         <div class="flex items-start gap-2">
           <a
+            v-if="project.link"
             :href="project.link"
             target="_blank"
             class="hover:scale-110 transform transition-transform duration-300 w-8 h-8 rounded-full flex-shrink-0 flex items-start justify-center"
           >
-            <img
-              :src="project.logo"
-              alt="logo"
-              class=""
-          /></a>
+            <img :src="project.logo" alt="logo" />
+          </a>
+          <img v-else :src="project.logo" alt="logo" class="w-8 h-8 rounded-full flex-shrink-0" />
           <div class="flex flex-col justify-start gap-1">
             <h1 class="-mt-1 leading-none">
               <a
+                v-if="project.link"
                 :href="project.link"
                 target="_blank"
                 class="hover:underline hover:text-blue-600"
                 >{{ project.title }}</a
               >
+              <span v-else>{{ project.title }}</span>
             </h1>
             <p class="text-sm text-gray-400">{{ $t(project.description) }}</p>
             <div class="flex gap-2">
