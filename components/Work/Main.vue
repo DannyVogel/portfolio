@@ -2,7 +2,7 @@
 const jobs = [
   {
     company: "Fayara",
-    companyLink: "https://flirtventures.com",
+    companyLink: "https://fayara.com",
     title: "jobs.Fayara.title",
     date: "jobs.Fayara.date",
     description: "jobs.Fayara.description",
