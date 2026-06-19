@@ -5,8 +5,8 @@ const jobs = [
     companyLink: "https://flirtventures.com",
     title: "jobs.Fayara.title",
     date: "jobs.Fayara.date",
-    description: "jobs.Fayara.description",
-    logo: "/img/flirtventures_logo.jpeg", 
+    bullets: "jobs.Fayara.bullets",
+    logo: "/img/flirtventures_logo.jpeg",
   },
   {
     company: "Games for a Living",
@@ -52,7 +52,10 @@ const jobs = [
               <p class="hidden sm:block">•</p>
               <h2 class="text-gray-400">{{ $t(job.date) }}</h2>
             </div>
-            <p class="text-sm text-gray-400">{{ $t(job.description) }}</p>
+            <ul v-if="job.bullets" class="text-sm text-gray-400 list-disc list-outside ml-4 space-y-1">
+              <li v-for="(bullet, i) in ($tm(job.bullets) as string[])" :key="i">{{ $rt(bullet) }}</li>
+            </ul>
+            <p v-else class="text-sm text-gray-400">{{ $t(job.description) }}</p>
             <a
               v-if="job.projectName"
               :href="job.projectLink"

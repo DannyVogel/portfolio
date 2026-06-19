@@ -31,7 +31,12 @@
       "title": "Desarrollador Frontend",
       "company": "Fayara",
       "date": "Sept 2025 - Present",
-      "description": "Desarrollo del frontend de las aplicaciones de citas de la empresa, así como varias herramientas y servicios internos."
+      "bullets": [
+        "Lideré la migración de una base de código Nuxt 2 obsoleta a Nuxt 4, rediseñándola como un monorepo que sirve más de 300 sitios white-label en 11 idiomas desde una base de código compartida mediante un sistema de herencia de capas de 4 niveles con SASS, alcanzando ~90% de reutilización de código entre sitios.",
+        "Implementé optimizaciones de imágenes, sirviendo imágenes del tamaño adecuado por dispositivo mediante srcset/sizes, además de formatos modernos (AVIF/WebP), reduciendo la carga y mejorando los tiempos de carga, con cobertura de regresión.",
+        "Implementé una capa de monetización publicitaria mediante banners y anuncios popunder.",
+        "Mantuve y actualicé el pipeline de CI/CD con despliegues en staging, pruebas de regresión visual y verificación de tipos."
+      ]
     },
     "GFAL": {
       "title": "Desarrollador Frontend",

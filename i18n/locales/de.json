@@ -31,7 +31,12 @@
       "title": "Frontend-Entwickler",
       "company": "Fayara",
       "date": "Sept 2025 - Präsent",
-      "description": "Entwicklung des Frontends der Unternehmens-Dating-Produkte sowie verschiedener interner Tools und Dienste."
+      "bullets": [
+        "Migration einer veralteten Nuxt-2-Codebasis auf Nuxt 4 geleitet und zu einem Monorepo umstrukturiert, das über 300 White-Label-Seiten in 11 Sprachen aus einer gemeinsamen Codebasis über ein 4-Ebenen-Layer-Vererbungssystem mit SASS betreibt und ~90% Wiederverwendung des Codes über Seiten hinweg erreicht.",
+        "Bildoptimierungen eingeführt, die gerätespezifische Bildgrößen über srcset/sizes sowie moderne Formate (AVIF/WebP) bereitstellen, um die Nutzlast zu reduzieren und das Laden zu verbessern, mit Regressionstestabdeckung.",
+        "Werbe-Monetarisierungsebene über Banner- und Popunder-Anzeigen implementiert.",
+        "CI/CD-Pipeline gewartet und aktualisiert mit Staging-Deployments, visuellen Regressionstests und Typüberprüfung."
+      ]
     },
     "GFAL": {
       "title": "Frontend-Entwickler",
