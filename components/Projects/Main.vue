@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "gameState",
-    link: "https://dv-gamestate.netlify.app/",
+    link: "https://game-state.netlify.app",
     description: "projectsList.gameState.description",
     logo: "/img/gameState.png",
     techStack: {
