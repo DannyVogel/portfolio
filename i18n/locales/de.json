@@ -64,7 +64,7 @@
       "description": "Zusammenarbeit in einem Chingu-Teamprojekt, um ein Dashboard mit Kryptowährungsinformationen aus der CoinGecko-API zu erstellen. Gerendert mit React unter Verwendung des Ant Design Muse Dashboards. Arbeitete mit agilen / Scrum-Methoden und einem Kanban-Board mit 3 anderen Entwicklern. Meine persönlichen Beiträge umfassen die Einrichtung der Benutzerauthentifizierung und die Verbindung der Datenbank, die Erstellung einer Favoritenmünzen-Watchlist, das Speichern der Favoritenmünzen in der Datenbank für jeden Benutzer."
     },
     "gameState": {
-      "description": "Eine Vue 3 PWA zur Verwaltung der eigenen Spielebibliothek, durchsuchbar über die IGDB API. Spiele können nach Spielstatus kategorisiert werden, mit Statistiken und Screenshot-Galerien. Authentifizierung über Passkey, mit Datensynchronisierung über das The Monolith Backend."
+      "description": "Eine installierbare Vue 3 PWA zur Verwaltung der eigenen Spielebibliothek. Spiele über die IGDB API suchen, nach Spielstatus kategorisieren und Statistiken sowie Screenshot-Galerien durchsuchen. Daten werden über das The Monolith Backend synchronisiert."
     },
     "toDo": {
       "description": "Eine To-Do-App, die mit React, TypeScript und Firebase Realtime Database erstellt wurde, um Aufgaben und Projekte zu verfolgen. Später habe ich eine aktualisierte Version mit Nuxt erstellt, sie in eine PWA umgewandelt, den Anmeldeablauf und die Animationen verbessert und an zusätzlichen Funktionen gearbeitet."
