@@ -31,12 +31,7 @@
       "title": "Frontend Developer",
       "company": "Fayara",
       "date": "Sept 2025 - Present",
-      "bullets": [
-        "Led the migration of an outdated Nuxt 2 codebase to Nuxt 4, rearchitecting it into a monorepo that serves 300+ white-label sites in 11 languages from one shared codebase via a 4-level layers inheritance system with SASS, reaching ~90% code reuse across sites.",
-        "Rolled out image optimizations, serving appropriately-sized images per device via srcset/sizes, plus modern formats (AVIF/WebP), ensuring reduced payload and improved loading, with regression coverage.",
-        "Implemented ad monetisation layer via banner and popunder ads.",
-        "Maintained and updated CI/CD pipeline with staging deploys, visual regression testing and type checking."
-      ]
+      "description": "Led the migration of an outdated Nuxt 2 codebase to Nuxt 4, rearchitecting it into a monorepo that serves 300+ white-label sites in 11 languages from one shared codebase via a 4-level layers inheritance system with SASS, reaching ~90% code reuse across sites. Rolled out image optimizations, serving appropriately-sized images per device via srcset/sizes, plus modern formats (AVIF/WebP), ensuring reduced payload and improved loading, with regression coverage. Implemented ad monetisation layer via banner and popunder ads. Maintained and updated CI/CD pipeline with staging deploys, visual regression testing and type checking."
     },
     "GFAL": {
       "title": "Frontend Developer",

@@ -31,12 +31,7 @@
       "title": "Développeur Frontend",
       "company": "Fayara",
       "date": "Sept 2025 - Présent",
-      "bullets": [
-        "Piloté la migration d'une base de code Nuxt 2 obsolète vers Nuxt 4, la réarchitecturant en un monorepo servant plus de 300 sites en marque blanche dans 11 langues depuis une base de code partagée via un système d'héritage de couches à 4 niveaux avec SASS, atteignant ~90% de réutilisation du code entre les sites.",
-        "Déployé des optimisations d'images, servant des images de taille adaptée à chaque appareil via srcset/sizes, ainsi que des formats modernes (AVIF/WebP), réduisant la charge utile et améliorant le chargement, avec une couverture de régression.",
-        "Implémenté une couche de monétisation publicitaire via des bannières et des publicités popunder.",
-        "Maintenu et mis à jour le pipeline CI/CD avec des déploiements en staging, des tests de régression visuelle et la vérification des types."
-      ]
+      "description": "Piloté la migration d'une base de code Nuxt 2 obsolète vers Nuxt 4, la réarchitecturant en un monorepo servant plus de 300 sites en marque blanche dans 11 langues depuis une base de code partagée via un système d'héritage de couches à 4 niveaux avec SASS, atteignant ~90% de réutilisation du code entre les sites. Déployé des optimisations d'images, servant des images de taille adaptée à chaque appareil via srcset/sizes, ainsi que des formats modernes (AVIF/WebP), réduisant la charge utile et améliorant le chargement, avec une couverture de régression. Implémenté une couche de monétisation publicitaire via des bannières et des publicités popunder. Maintenu et mis à jour le pipeline CI/CD avec des déploiements en staging, des tests de régression visuelle et la vérification des types."
     },
     "GFAL": {
       "title": "Développeur Frontend",

@@ -31,12 +31,7 @@
       "title": "Desenvolupador Frontend",
       "company": "Fayara",
       "date": "Sept 2025 - Present",
-      "bullets": [
-        "Vaig liderar la migració d'una base de codi Nuxt 2 obsoleta a Nuxt 4, rearquitectant-la en un monorepo que serveix més de 300 llocs white-label en 11 idiomes des d'una base de codi compartida mitjançant un sistema d'herència de capes de 4 nivells amb SASS, aconseguint ~90% de reutilització de codi entre llocs.",
-        "Vaig implementar optimitzacions d'imatges, servint imatges de la mida adequada per dispositiu mitjançant srcset/sizes, a més de formats moderns (AVIF/WebP), reduint la càrrega i millorant els temps de càrrega, amb cobertura de regressió.",
-        "Vaig implementar una capa de monetització publicitària mitjançant banners i anuncis popunder.",
-        "Vaig mantenir i actualitzar el pipeline de CI/CD amb desplegaments a staging, proves de regressió visual i verificació de tipus."
-      ]
+      "description": "Vaig liderar la migració d'una base de codi Nuxt 2 obsoleta a Nuxt 4, rearquitectant-la en un monorepo que serveix més de 300 llocs white-label en 11 idiomes des d'una base de codi compartida mitjançant un sistema d'herència de capes de 4 nivells amb SASS, aconseguint ~90% de reutilització de codi entre llocs. Vaig implementar optimitzacions d'imatges, servint imatges de la mida adequada per dispositiu mitjançant srcset/sizes, a més de formats moderns (AVIF/WebP), reduint la càrrega i millorant els temps de càrrega, amb cobertura de regressió. Vaig implementar una capa de monetització publicitària mitjançant banners i anuncis popunder. Vaig mantenir i actualitzar el pipeline de CI/CD amb desplegaments a staging, proves de regressió visual i verificació de tipus."
     },
     "GFAL": {
       "title": "Desenvolupador Frontend",
