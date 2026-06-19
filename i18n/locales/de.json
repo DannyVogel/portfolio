@@ -48,6 +48,9 @@
   },
   "projects": "Projekte",
   "projectsList": {
+    "theMonolith": {
+      "description": "Eine zentralisierte Backend-API, entwickelt mit Nitro und TypeScript, die gemeinsame Dienste bereitstellt — Web-Push-Benachrichtigungen, zentralisiertes Logging, IGDB-Spielverfolgung, Standort-Check-ins und geräteübergreifendes Link-Teilen — für mehrere persönliche Projekte von einem einzigen SQLite-gestützten Server."
+    },
     "InvictoAI": {
       "description": "Invicto AI ist eine innovative Plattform, die es Benutzern ermöglicht, ihre Kryptowährungsinformationen zu verfolgen und intelligente Handelsschlussfolgerungen zu treffen. Dank unseres proprietären Sprachmodells, das auf Daten von professionellen Kryptotradern trainiert wurde, können Sie individuelle Handelsschlussfolgerungen treffen und Ihre Investitionen optimal verwalten."
     },

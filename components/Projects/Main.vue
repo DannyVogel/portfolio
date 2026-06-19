@@ -1,6 +1,17 @@
 <script lang="ts" setup>
 const projects = [
   {
+    title: "The Monolith",
+    link: "https://the-monolith.onrender.com/",
+    description: "projectsList.theMonolith.description",
+    logo: "/img/the_monolith_logo.svg",
+    techStack: {
+      TypeScript: "i-logos-typescript-icon",
+      "Node.js": "i-logos-nodejs-icon",
+      SQLite: "i-logos-sqlite",
+    },
+  },
+  {
     title: "InvictoAI",
     link: "https://invicto.netlify.app/",
     description: "projectsList.InvictoAI.description",

@@ -48,6 +48,9 @@
   },
   "projects": "Projects",
   "projectsList": {
+    "theMonolith": {
+      "description": "A centralized backend API built with Nitro and TypeScript, providing shared services — web push notifications, centralized logging, IGDB game tracking, location check-ins, and cross-device link sharing — to multiple personal projects from a single SQLite-backed server."
+    },
     "InvictoAI": {
       "description": "Invicto AI is an innovative platform designed to empower crypto investors with advanced portfolio tracking and AI-driven insights. Our proprietary language model, trained on data from top crypto traders, provides real-time recommendations tailored to your investment strategies."
     },

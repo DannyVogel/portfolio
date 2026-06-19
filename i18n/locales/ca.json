@@ -48,6 +48,9 @@
   },
   "projects": "Projectes",
   "projectsList": {
+    "theMonolith": {
+      "description": "Una API backend centralitzada construïda amb Nitro i TypeScript, que proporciona serveis compartits — notificacions push web, registre centralitzat, seguiment de jocs IGDB, check-ins de localització i compartició d'enllaços entre dispositius — a múltiples projectes personals des d'un únic servidor basat en SQLite."
+    },
     "InvictoAI": {
       "description": "Invicto AI és una plataforma innovadora que ofereix un servei de rastreig de cartera de criptomonedes i recomanacions de trading mitjançant l'IA. Utilitza un model de llenguatge personalitzat que utilitza dades de traders de criptomonedes per proporcionar suggeriments de negociació personalitzats."
     },
