@@ -151,6 +151,7 @@ interface CheckinRequest {
   name?: string
   lat?: number
   lng?: number
+  date?: string  // YYYY-MM-DD, defaults to today
 }
 
 interface CheckinResponse {
