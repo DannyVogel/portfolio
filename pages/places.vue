@@ -7,7 +7,7 @@ definePageMeta({
 })
 
 const toast = useToast()
-const { fetchPlaces, deletePlace } = usePlacesApi()
+const { isConfigured, fetchPlaces, deletePlace } = usePlacesApi()
 const { data, status, refresh } = await fetchPlaces()
 const mapRef = ref<{ resetZoom: () => void; focusVenue: (name: string) => void } | null>(null)
 const showCheckinForm = ref(false)
@@ -65,6 +65,7 @@ async function confirmDelete() {
         <UButton
           icon="i-ph-plus"
           color="primary"
+          :disabled="!isConfigured"
           @click="showCheckinForm = true"
         >
           Check In
@@ -105,9 +106,14 @@ async function confirmDelete() {
       />
     </div>
 
+    <div v-else-if="!isConfigured" class="text-center py-8">
+      <p class="text-gray-400">Places API not configured</p>
+      <p class="text-sm text-gray-500 mt-2">Set NUXT_PUBLIC_PLACES_API_URL and NUXT_PUBLIC_PLACES_API_KEY at build time.</p>
+    </div>
+
     <div v-else class="text-center py-8">
       <p class="text-gray-400">Failed to load places data</p>
-      <p class="text-sm text-gray-500 mt-2">Make sure the API is configured in your environment variables.</p>
+      <p class="text-sm text-gray-500 mt-2">The API is configured but did not respond.</p>
     </div>
 
     <!-- Checkin Modal -->
